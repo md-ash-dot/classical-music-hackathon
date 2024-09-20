@@ -68,22 +68,22 @@ export const popCultureQuestions = [
         sound: ""
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Madness of King George", "Beethoven", "The King's Speech", "Amadeus"],
+        answer: "Amadeus",
+        sound: "../assets/audio/Requiem.ogg"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["The Sword in the Stone", "Robin Hood", "Fantasia", "The Sorcerer's Apprentice"],
+        answer: "Fantasia",
+        sound: "../assets/audio/apprentice.mp3"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Rocky", "Raging Bull", "Taxi", "The Godfather"],
+        answer: "Raging Bull",
+        sound: "../assets/audio/Cavalleria-Rusticana.ogg"
     },
     {
         question: "Which of these movies featured:",
@@ -111,14 +111,14 @@ export const popCultureQuestions = [
     },
     {
         question: "Which of these movies featured:",
-        options: ["", "", "", "Brief Encounters"],
+        options: ["The Ipcress File", "Casablanca", "Citizen Kane", "Brief Encounters"],
         answer: "",
         sound: "../assets/audio/rachmaninov.mp3"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Apocalypse Now", "Forrest Gump", "Deer Hunter", "Hot Shots"],
+        answer: "Apocalypse Now",
+        sound: "../assets/audio/valkyries.ogg"
     },
 ];
