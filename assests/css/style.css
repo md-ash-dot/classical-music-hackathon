@@ -81,7 +81,32 @@ footer {
     z-index: 3;
 }
 /* == Home & Quiz == */
+
+.welcome-hidden {
+    display: none;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.intro-container {
+    background-color: #000000;
+}
+
 /* == Game Area == */
+
+#game-area {
+    color :#fff;
+    align-content: center;
+    flex-direction: column;
+    margin: 1.5rem auto;
+}
+
+
+
 /* == Start Game Button & 404 Button == */
 /* == Restart Quiz Button == */
 /* == Modal == */
