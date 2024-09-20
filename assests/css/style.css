@@ -64,7 +64,22 @@ header {
     font-weight: bold;
     color: white;
 }
+
 /* == Footer == */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    border-top: 1px solid #fff;
+    z-index: 3;
+}
 /* == Home & Quiz == */
 /* == Game Area == */
 /* == Start Game Button & 404 Button == */
