@@ -105,9 +105,37 @@ footer {
     margin: 1.5rem auto;
 }
 
+#game-area div {
+    text-align: center;
+}
 
+#game-area h2 {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.intro-text {
+    background-color: #000000;
+    font-family: sans-serif;
+}
 
 /* == Start Game Button & 404 Button == */
+
+.game-start {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: #fff;
+    color: #000000;
+    z-index: 1;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
 /* == Restart Quiz Button == */
 /* == Modal == */
 /* == Variables == */
