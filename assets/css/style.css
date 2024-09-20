@@ -14,10 +14,11 @@
 body {
     display: flex;
     flex-direction: column;
-   /* background-color: #000000; */
-    background-image: url('assets/images/faded-notes.jpg');
-    background-size: cover;
-    min-height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background:
+        url('../images/faded-notes.jpg') center center / cover no-repeat,
+        rgba(0, 0, 0, 0.6); /* Solid color underlay */
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
 }
