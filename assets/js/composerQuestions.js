@@ -1,5 +1,5 @@
 // Define an array to hold your quiz questions
-export const popCultureQuestions = [
+export const composerQuestions = [
     // Add questions here
     {
         question: "This composer wrote 'The Four Seasons'.",
