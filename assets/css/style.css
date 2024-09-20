@@ -5,14 +5,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* == navbar ==*/
+
+
 /* == Backgrounds == */
 
 body {
     display: flex;
     flex-direction: column;
-    background-image: url('');
-    background-size: cover;
-    min-height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.6);
+    background:
+        url('../images/faded-background.jpg') center center / cover no-repeat,
+        rgba(0, 0, 0, 0.6); /* Solid color underlay */
+    min-height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -53,7 +59,7 @@ main {
 /* == Header == */
 
 header {
-    width: 100%;
+    width: 50%;
     background-color: #000000;
 }
 /* == Logo == */
@@ -62,6 +68,14 @@ header {
     font-family: sans-serif;
     font-size: 1.5em;
     font-weight: bold;
+    color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.logo a {
+    text-decoration: none;
     color: white;
 }
 
@@ -73,12 +87,19 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: center;
     color: white;
+    padding: 0.5rem 1rem;
     background-color: #000000;
     border-top: 1px solid #fff;
     z-index: 3;
+}
+
+.note-div {
+    width: 200px;
+    height: 100px;
+    position: fixed;
 }
 /* == Home & Quiz == */
 
@@ -105,9 +126,42 @@ footer {
     margin: 1.5rem auto;
 }
 
+#game-area div {
+    text-align: center;
+}
 
+#game-area h2 {
+    color: white;
+    background-color: #000000;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.intro-text {
+    background-color: #000000;
+    font-family: sans-serif;
+}
 
 /* == Start Game Button & 404 Button == */
+
+.game-start {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0.5rem;
+    width: 12rem;
+    height: 2.5rem;
+    font-family: sans-serif;
+    z-index: 1;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
 /* == Restart Quiz Button == */
 /* == Modal == */
 /* == Variables == */
