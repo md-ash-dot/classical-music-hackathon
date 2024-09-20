@@ -30,10 +30,13 @@
             <img class="welcome-image" src="" alt="text welcome to music trivia">
         </div>
 
-        
+        <button id="start-game-pop" type="button" class="game-start" aria-label="button to start pop culture game">Pop Culture</button><br>
+        <button id="start-game-instrument" type="button" class="game-start" aria-label="button to start instrument game">Musical Instruments</button><br>
+        <button id="start-game-sounds" type="button" class="game-start" aria-label="button to start sounds game">Musical Sounds</button>
 
     </main>
     <footer>
+        Created by The Empire Strikes Bach (educational purposes)
 
     </footer>
 
@@ -44,6 +47,16 @@
     <script type="module" src="assests/js/popCultureQuestions.js"></script>
     <script type="module" src="assests/js/soundQuestions.js"></script>
 
+    <!--message to user if js is not supported-->
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+    <!-- modal for answer comparison-->
+     <div id="answerModal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <span id="modal-message"></span>
+            <button id="next-question-modal-button" type="button" class="modal-game-start" aria-label="Button for next trivia question">next question</button>
+        </div>
+     </div>
 </body>
 
 </html>
