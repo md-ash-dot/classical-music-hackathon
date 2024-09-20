@@ -1,0 +1,115 @@
+/* == General == */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* == Backgrounds == */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('');
+    background-size: cover;
+    min-height: 100dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* == Layout == */
+
+h1 {
+    text-align: center;
+    background: #000000;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    display: block;
+}
+
+main {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.intro-text {
+    background: #000000;
+    color: white;
+    font-size:  0.75em;
+}
+
+#container {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 1.30svh;
+    right: 0%;
+}
+
+/* == Header == */
+
+header {
+    width: 100%;
+    background-color: #000000;
+}
+/* == Logo == */
+
+.logo {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+/* == Footer == */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    border-top: 1px solid #fff;
+    z-index: 3;
+}
+/* == Home & Quiz == */
+
+.welcome-hidden {
+    display: none;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.intro-container {
+    background-color: #000000;
+}
+
+/* == Game Area == */
+
+#game-area {
+    color :#fff;
+    align-content: center;
+    flex-direction: column;
+    margin: 1.5rem auto;
+}
+
+
+
+/* == Start Game Button & 404 Button == */
+/* == Restart Quiz Button == */
+/* == Modal == */
+/* == Variables == */
+/* == Sounds == */
+/* == Media Queries == */

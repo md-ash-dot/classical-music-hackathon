@@ -44,5 +44,10 @@ export const soundQuestions = [
         answer: "Trumpet",
         sound: "https://splice.com/sounds/sample/37c4cf79fa01e9d293d308c722dd0faa71692da7f43121d9ec6ad09df040e720"
     },
-    
+    {
+        question: "",
+        options: ["", "", "", ""],
+        answer: "",
+        sound: ""
+    },
 ]
