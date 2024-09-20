@@ -68,6 +68,14 @@ header {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+    margin-top: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
 }
 
 /* == Footer == */
