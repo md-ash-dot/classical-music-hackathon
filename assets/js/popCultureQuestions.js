@@ -50,16 +50,16 @@ export const popCultureQuestions = [
         sound: ""
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Star Trek", "Space Jam", "Rebel Moon", "Star Wars"],
+        answer: "Star Wars",
+        sound: "https://upload.wikimedia.org/wikipedia/en/d/de/The_Imperial_March_%28Star_Wars_-_The_Empire_Strikes_Back%2C_Finale%29.ogg"
     },
     {
         question: "Which of these sporting people used:",
-        options: ["", "Tonya Harding", "Torvill and Dean", ""],
+        options: ["Virtue and Moir", "Tonya Harding", "Torvill and Dean", "Yuzuru Hanyu"],
         answer: "Torvill and Dean",
-        sound: ""
+        sound: "../assets/audio/Bolero.mp3"
     },
     {
         question: "Which of these movies featured:",
