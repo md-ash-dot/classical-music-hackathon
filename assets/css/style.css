@@ -14,8 +14,8 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    /*background-image: url('');*/
+   /* background-color: #000000; */
+    background-image: url('assets/images/faded-notes.jpg');
     background-size: cover;
     min-height: 100dvh;
     overflow: hidden;
@@ -93,6 +93,12 @@ footer {
     background-color: #000000;
     border-top: 1px solid #fff;
     z-index: 3;
+}
+
+.note-div {
+    width: 200px;
+    height: 100px;
+    position: fixed;
 }
 /* == Home & Quiz == */
 
