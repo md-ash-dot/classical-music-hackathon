@@ -1,5 +1,22 @@
 /* == General == */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 /* == Backgrounds == */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('');
+    background-size: cover;
+    min-height: 100dvh;
+    overflow: hidden;
+    position: relative;
+}
+
 /* == Layout == */
 /* == Header == */
 /* == Logo == */
