@@ -56,16 +56,16 @@ export const popCultureQuestions = [
         sound: ""
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
+        question: "Which of these sporting people used:",
+        options: ["", "Tonya Harding", "Torvill and Dean", ""],
+        answer: "Torvill and Dean",
         sound: ""
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Romancing The Stone", "Out of Africa", "Remains of The Day", "The Princess Bride"],
+        answer: "Out of Africa",
+        sound: "../assets/audio/Clarinet.ogg"
     },
     {
         question: "Which of these movies featured:",
