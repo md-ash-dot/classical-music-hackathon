@@ -139,7 +139,6 @@ footer {
     width: 80%;
     height: auto;
     max-width: 100%;
-    margin-top: -2rem;
 }
 
 .intro-container {
@@ -178,8 +177,6 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -3rem;
-    margin-bottom: 1rem;
 }
 
 .game-start {
@@ -191,8 +188,8 @@ footer {
     border: none;
     border-radius: 20px;
     padding: 0.6rem;
-    width: 18rem;
-    height: 4rem;
+    width: 16rem;
+    height: 3rem;
     margin-bottom: 1.2rem;
     font-family: "Lugrasimo", serif;
     font-size: large;
