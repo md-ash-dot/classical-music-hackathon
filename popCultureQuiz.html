@@ -12,10 +12,10 @@
     <!-- stylesheet or sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
 </head>
 
 <body>
@@ -31,20 +31,21 @@
 
     <main>
         <div id="quiz-container" class="quiz-container ">
-            <h1>Quiz Game</h1>
-            <p id="question"></p>
+            <h1>Pop Quiz Game</h1>
+            <p id="question-number"></p>
+            <button id="play-audio-btn" onclick="playAudio()">Play Audio</button>
+            <audio id="audio-player" controls style="display:none;"></audio>
             <div id="options" class="options-container">
                 <!-- Options will be injected here -->
             </div>
             <div id="feedback" class="feedback"></div>
-            <button id="next-btn" class="next-btn" disabled>Answer</button>
+            <button id="next-btn" onclick="nextQuestion()">Answer</button>
         </div>
         <div id="result" class="result">
-            <h2>Your final score is:</h2>
-            <p id="score"></p>
+            <p id="final-score" style="display:none;"></p>
             <div id="score-feedback"></div>
-            <div id="past-scores"></div>
-            <a href="instrumentQuiz.html" class="game-start" aria-label="button to play instrument quiz again">Play again</a>
+            <p id="high-score" style="display:none;"></p>
+            <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
             <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
         </div>
 
@@ -54,17 +55,17 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/instrumentQuestions.js"></script>
-    <script src="assets/js/instrumentQuiz.js"></script>     <!-- Quiz logic file -->
+    <script src="assets/js/popCultureQuestions.js"></script>
+    <script src="assets/js/popCultureQuiz.js"></script>     <!-- Quiz logic file -->
 
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- modal for answer comparison-->
-     <!-- <div id="answerModal" class="modal">
+    <!-- <div id="answerModal" class="modal">
         <div id="modal-content" class="modal-content">
             <span id="modal-message"></span>
             <button id="next-question-modal-button" type="button" class="modal-game-start" aria-label="Button for next trivia question">next question</button>
         </div>
-     </div> -->
+    </div> -->
 
 </body>
 

@@ -4,8 +4,8 @@ let selectedQuestions = [];
 let answerChecked = false; // To track if feedback is shown
 
 // Audio files for feedback
-const correctSound = new Audio('assets/audio/correctAnswer.mp3');  // Add path to correct answer sound
-const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');  // Add path to incorrect answer sound
+const correctSound = new Audio('assets/audio/correctAnswer.mp3');
+const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');
 
 // Selectors for HTML elements
 const questionEl = document.getElementById('question');
@@ -13,6 +13,7 @@ const optionsEl = document.getElementById('options');
 const nextBtn = document.getElementById('next-btn');
 const feedbackEl = document.getElementById('feedback');
 const scoreEl = document.getElementById('score');
+const scoreFeedbackEl = document.getElementById('score-feedback');
 const resultEl = document.getElementById('result');
 const quizContainerEl = document.getElementById('quiz-container');
 const pastScoresEl = document.getElementById('past-scores');
@@ -29,7 +30,7 @@ function shuffle(array) {
 // Function to select 10 random questions
 function selectRandomQuestions() {
     const shuffledQuestions = shuffle(instrumentQuestions); // Shuffle all the questions
-    selectedQuestions = shuffledQuestions.slice(0, 3); // Take the first 10
+    selectedQuestions = shuffledQuestions.slice(0, 10); // Take the first 10
 }
 
 // Function to load the current question
@@ -110,12 +111,12 @@ function nextQuestion() {
         if (currentQuestionIndex < selectedQuestions.length) {
             setTimeout(() => { // Wait 2 seconds to show feedback before loading the next question
                 loadQuestion(); // Load the next question
-            }, 2000);
+            }, 1000);
         } else {
             // If the last question was just answered, show feedback and then end the quiz
             setTimeout(() => {
                 endQuiz(); // End the quiz after feedback is shown
-            }, 2000);
+            }, 1000);
         }
     }
 }
@@ -129,6 +130,25 @@ function storeHighestScore() {
     }
 }
 
+// Display a result feedback based on the amount of correct answers
+function displayScoreFeedback(score) {
+    let message;
+    
+    if (score === 0) {
+        message = "Better luck next time! Keep practicing.";
+    } else if (score <= 4) {
+        message = "It might be too early to sign up for an orchestra.";
+    } else if (score <= 7) {
+        message = "Maybe join a garage band for some fun?";
+    } else if (score <= 9) {
+        message = "You're ready for a jam session! Keep honing those skills.";
+    } else {
+        message = "WOW! You're a melomaniac!";
+    }
+    
+    scoreFeedbackEl.innerText = message; // Display the message in the HTML
+}
+
 // Function to end the quiz and display the score
 function endQuiz() {
     storeHighestScore(); // Store the highest score if applicable
@@ -139,9 +159,10 @@ function endQuiz() {
     const highestScore = localStorage.getItem('highestScore');
     scoreEl.innerHTML = `${score} out of ${selectedQuestions.length}`;
     pastScoresEl.innerHTML = `Highest Score: ${highestScore}`;
+    displayScoreFeedback(score);
 }
 
-// Start the quiz: Select 3 random questions and load the first question
+// Start the quiz: Select 10 random questions and load the first question
 // Initialize the quiz
 selectRandomQuestions();
 loadQuestion();
