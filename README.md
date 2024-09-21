@@ -56,7 +56,11 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) t
 
 ![Color Design](assets/images/readme/color-design.png)
 
-### Typography
+## Typography
+
+ - Lugrasimo google font was used as the main font of the website in order to increase readability of the content on the pages.
+
+ ![Google Font](assets/images/google-font.png)
 
 ### Wireframes
 
