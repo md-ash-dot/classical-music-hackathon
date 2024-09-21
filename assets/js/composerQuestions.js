@@ -28,40 +28,34 @@ export const composerQuestions = [
         answer: "Tchaikovsky"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "This Austrian composer wrote over 600 songs, including the famous 'Ave Maria'.",
+        options: ["Mozart", "Beethoven", "Schubert", "Brahms"],
+        answer: "Schubert"
+    },
+    {
+        question: "This German composer is known for his operas 'The Ring Cycle' and 'Tristan und Isolde'.",
+        options: ["Wagner", "Beethoven", "Schumann", "Mendelssohn"],
+        answer: "Wagner"
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
-    },
-    {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     
 ];
