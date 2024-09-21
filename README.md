@@ -28,9 +28,25 @@ The Empire Strikes Bach Musical Quiz App is an interactive, educational tool des
 
 ### User Experience
 
+The Empire Strikes Bach musical quiz app is essential for creating an engaging, intuitive, and enjoyable interaction that keeps users returning for more. The UX design will focus on simplicity, engagement, accessibility, and a smooth flow from question to question. Below is a breakdown of the key UX elements for the app.
+
 **The Ideal User**
+- It ensure that first-time users understand the app's features and how to navigate through it without feeling overwhelmed.
+- It provide a clear navigation and quick access to different quiz categories for any users.
+- It Offers a clean, focused environment that makes answering questions fun and engaging.
+- The APP Keep users motivated by making the quiz more interactive and competitive.
+- Ensure a high-quality, smooth audio experience for sound-based questions for users.
+- Make the app usable for a broad audience, including those with different accessibility needs.
+- Maintain a fluid and logical flow through the app to minimize confusion and frustration.
+-  Encourage users to continue engaging with the app after completing quizzes.
+- Ensure a consistent experience across devices and platforms for users.
+- Allow users to provide feedback easily.
 
 **Site Goals**
+- To provide a fun, interactive learning experience that enhances users’ musical knowledge.
+- To keep users engaged and motivated to return to the site regularly.
+-  Ensure the site is easy to navigate, intuitive, and offers a positive user experience.
+- To attract a broad audience by providing a mix of educational and entertaining content.
 
 ### Colour Scheme
 
