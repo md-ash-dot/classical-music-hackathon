@@ -88,24 +88,19 @@ export const composerQuestions = [
         answer: "Rimsky-Korsakov"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: ""
+        question: "This composer is known for his innovative use of harmony and is often considered the bridge between the Classical and Romantic eras.",
+        options: ["Brahms", "Schubert", "Beethoven", "Haydn"],
+        answer: "Beethoven"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: ""
+        question: "Which composer is famous for his ballets 'Swan Lake' and 'Sleeping Beauty'?",
+        options: ["Tchaikovsky", "Stravinsky", "Prokofiev", "Chopin"],
+        answer: "Tchaikovsky"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: ""
-    },
-    {
-        question: "",
-        options: ["", "", "", ""],
-        answer: ""
-    },
+        question: "This French composer is known for his orchestral work 'La Mer' and the ballet 'Daphnis et Chloé'.",
+        options: ["Debussy", "Ravel", "Saint-Saëns", "Fauré"],
+        answer: "Debussy"
+    }
     
 ];
