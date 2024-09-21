@@ -152,7 +152,7 @@ This project was deployed on GitHub pages using the following steps:
 
 **GitHub**
 
-First a new reposiotry was created in github then this project can be cloned or forked in order to make a local copy on your own system.
+First a new repository was created in github then this project can be cloned or forked in order to make a local copy on your own system.
 
 Once the project is cloned or forked, in order to run it locally you will need to use the command 'npm run start' to start the app.
 
