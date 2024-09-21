@@ -2,16 +2,16 @@
 export const popCultureQuestions = [
     // Add questions here
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured?",
+        options: ["The Meg", "Open Water", "Ready Player One", "Jaws"],
+        answer: "Jaws",
+        sound: "../aasets/audio/John.mp3"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured?",
+        options: ["Dances with Wolves", "Shadowlands", "A River Runs Through It", "Legends of the Fall"],
+        answer: "Dances with Wolves",
+        sound: "../assets/audio/Barry.mp3"
     },
     {
         question: "Which company used this in an advert?",
