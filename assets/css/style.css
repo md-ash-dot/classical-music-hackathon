@@ -9,8 +9,19 @@
     box-sizing: border-box;
 }
 
-/* == navbar ==*/
+/* == Header == */
 
+header {
+    width: 50%;
+    background-color: #000000;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: auto;
+}
 
 /* == Backgrounds == */
 
@@ -59,29 +70,6 @@ main {
     right: 0%;
 }
 
-/* == Header == */
-
-header {
-    width: 50%;
-    background-color: #000000;
-}
-/* == Logo == */
-
-.logo {
-    font-family: sans-serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    padding-left: 25px;
-    padding-top: 25px;
-    margin-top: 10px;
-}
-
-.logo a {
-    text-decoration: none;
-    color: white;
-}
-
 /* == Footer == */
 
 footer {
@@ -120,9 +108,10 @@ footer {
 }
 
 .welcome-image {
-    width: 60%;
+    width: 80%;
     height: auto;
     max-width: 100%;
+    margin-top: -2rem;
 }
 
 .intro-container {
@@ -161,38 +150,41 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -3rem;
 }
 
 .game-start {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFD70085;
+    background: #FFD700;
     color: #11147a;
     border: none;
     border-radius: 20px;
     padding: 0.6rem;
-    width: 12rem;
+    width: 18rem;
+    height: 4rem;
     margin-bottom: 1.2rem;
     font-family: "Lugrasimo", serif;
-    font-size: small;
-    transition: transform 0.2s ease, box-shadow 0.5s ease;
+    font-size: large;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     outline: none;
     cursor: pointer;
 }
 
 .game-start:hover {
     transform: scale(1.05);
-    background-color: #FFD700;
-    box-shadow: 0 0 10px rgba(244, 216, 57, 0.7);
-    text-shadow: 0 0 5px rgba(22, 34, 44, 0.3);
+    background-color: #dde83a;
+    box-shadow: 0 0 15px rgba(235, 208, 56, 0.7);
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
 
 .game-start:focus {
     outline: 2px solid rgb(28, 72, 110);
-    background-color: #FFD700;
-    box-shadow: 0 0 10px rgba(244, 216, 57, 0.7);
-    text-shadow: 0 0 5px rgba(22, 34, 44, 0.3);
+    background-color: #dde83a;
+    box-shadow: 0 0 15px rgba(235, 208, 56, 0.7);
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 
 }
 /* == Restart Quiz Button == */
