@@ -32,22 +32,22 @@ export const popCultureQuestions = [
         sound: ""
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["American Pie", "Mrs Doubtfire", "Cool Hand Luke", "The Shawshank Redemption"],
+        answer: "The Shawshank Redemption",
+        sound: "../assets/audio/Figaro"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Starship Troopers", "The Fifth Element", "Dune", "Blade Runner"],
+        answer: "The Fifth Element",
+        sound: "../assets/audio/Diva.mp3"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "Which of these movies featured:",
+        options: ["Full Metal Jacket", "Platoon", "The Deer Hunter", "We Were Soldiers"],
+        answer: "The Deer Hunter",
+        sound: "../assets/audio/Cavatina.mp3"
     },
     {
         question: "Which of these movies featured:",
