@@ -6,12 +6,13 @@
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Musicoligists can test their knowledge here">
-    <meta name="keywords" content="pop culture, soundtracks, quiz, knowledge, musical instruments, music, classical music, opera">
+    <meta name="keywords"
+        content="pop culture, soundtracks, quiz, knowledge, musical instruments, music, classical music, opera">
     <title>Testing your musical knowledge</title>
 
     <!-- stylesheet or sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!-- favicon -->
 
 </head>
@@ -20,7 +21,7 @@
     <header>
         <span class="logo"><a href="" aria aria-label="link to homepage">Melomaniacs</a></span>
         <div id="container">
-    </div>
+        </div>
         </div>
     </header>
     <main>
@@ -28,10 +29,14 @@
         <div class="welcome-container">
             <img class="welcome-image" src="assets/images/melomaniac-gold.png" alt="text welcome to music trivia">
         </div>
-        <button id="start-game-pop" type="button" class="game-start" aria-label="button to start pop culture game">Pop Culture</button><br>
-        <button id="start-game-instrument" type="button" class="game-start" aria-label="button to start instrument game">Musical Instruments</button><br>
-        <button id="start-game-sounds" type="button" class="game-start" aria-label="button to start sounds game">Musical Sounds</button>
-        <button id="start-game-sounds" type="button" class="game-start" aria-label="button to start sounds game">Musical Composers</button>
+        <div class="btn-game">
+            <a id="start-game-pop" class="game-start" aria-label="button to start pop culture game">Pop Culture</a>
+            <a id="start-game-instrument" class="game-start" aria-label="button to start instrument game">Musical
+                Instruments</a>
+            <a id="start-game-sounds" class="game-start" aria-label="button to start sounds game">Musical Sounds</a>
+            <a id="start-game-composers" class="game-start" aria-label="button to start composers game">Musical
+                Composers</a>
+        </div>
 
     </main>
     <footer>
@@ -39,7 +44,7 @@
     </footer>
 
     <!-- Scripts -->
-     
+
     <script type="module" src="assets/js/game.js"></script>
     <script type="module" src="assets/js/instrumentQuestions.js"></script>
     <script type="module" src="assets/js/popCultureQuestions.js"></script>
@@ -48,12 +53,13 @@
 
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- modal for answer comparison-->
-     <div id="answerModal" class="modal">
+    <div id="answerModal" class="modal">
         <div id="modal-content" class="modal-content">
             <span id="modal-message"></span>
-            <button id="next-question-modal-button" type="button" class="modal-game-start" aria-label="Button for next trivia question">next question</button>
+            <button id="next-question-modal-button" type="button" class="modal-game-start"
+                aria-label="Button for next trivia question">next question</button>
         </div>
-     </div>
+    </div>
 
 </body>
 
