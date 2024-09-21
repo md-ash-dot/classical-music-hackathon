@@ -303,6 +303,50 @@ footer {
 /* == Modal == */
 /* == Variables == */
 /* == Sounds == */
+/* Team Page */
+.team-intro {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #D8A409;
+    margin: 20px auto;
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1238px;
+    margin: 0 auto 20px;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 0 2% 20px;
+    color: #D8A409;
+}
+
+.team-card img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-card h2 {
+    margin-bottom: 20px;
+}
+
+.team-card a {
+    color: #EEE5E9;
+}
+
 /* == Media Queries == */
 @media screen and (max-width: 760px) {
     .nav-bar{

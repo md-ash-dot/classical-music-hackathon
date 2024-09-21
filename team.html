@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Musicoligists can test their knowledge here">
+    <meta name="keywords"
+        content="pop culture, soundtracks, quiz, knowledge, musical instruments, music, classical music, opera">
+    <title>Testing your musical knowledge</title>
+    <!-- stylesheet or sheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <img id="logo" class="logo" src="assets/images/musiclogo.png" alt="Logo for the game">
+            <nav class="nav-item">
+                <a href="index.html" class="active" aria-label="Link to Home Page (current page)">Home</a>
+                <a href="" aria-label="Link to Team Page(opens in the same tab)">Team</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="team-intro">
+            <h2>Meet the Team</h2>
+            <p>The Empire Strikes Bach are a group of developers working together to create the ultimate music trivia quiz. Whether you are a true melomaniac or looking to learn more about classical music, we want to make this a fun experience for you.</p>
+        </div>
+        <div class="team-cards">
+           <div class="team-card">
+            <h2>Ebuka</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>placeholder</p>
+           </div>
+           <div class="team-card">
+            <h2>Gemma</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>placeholder</p>
+           </div>
+           <div class="team-card">
+            <h2>Iryna</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/irynasanzhara/" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>Double Bass</p>
+           </div>
+           <div class="team-card">
+            <h2>James</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/james-d-evans/" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>Saxophone</p>
+           </div>
+           <div class="team-card">
+            <h2>Kiree</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="www.linkedin.com/in/kireebellamy" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>Clarinet</p>
+           </div>
+           <div class="team-card">
+            <h2>Maria</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/maria-grozova/" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>Harp</p>
+           </div>
+           <div class="team-card">
+            <h2>Muhammed</h2>
+            <img src="assets/images/Person_Image_Placeholder.png" alt="">
+            <a href="" target="_blank">GitHub</a>
+            <a href="" target="_blank">LinkedIn</a>
+            <p>Favourite instrument:</p>
+            <p>placeholder</p>
+           </div>
+        </div>
+
+
+    </main>
+    <footer>
+        Created by The Empire Strikes Bach (educational purposes)
+    </footer>
+
+    <!-- Scripts -->
+
+    <script type="module" src="assets/js/game.js"></script>
+    <script type="module" src="assets/js/instrumentQuestions.js"></script>
+    <script type="module" src="assets/js/popCultureQuestions.js"></script>
+    <script type="module" src="assets/js/soundQuestions.js"></script>
+    <script type="module" src="assets/js/composerQuestions.js"></script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <!-- modal for answer comparison-->
+    <div id="answerModal" class="modal">
+        <div id="modal-content" class="modal-content">
+            <span id="modal-message"></span>
+            <button id="next-question-modal-button" type="button" class="modal-game-start"
+                aria-label="Button for next trivia question">next question</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
