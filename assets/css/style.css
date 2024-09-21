@@ -1,3 +1,6 @@
+/* Google Fonts import*/
+@import url(https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap);
+
 /* == General == */
 
 * {
@@ -110,7 +113,16 @@ footer {
 .welcome-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-image {
+    width: 60%;
+    height: auto;
+    max-width: 100%;
 }
 
 .intro-container {
@@ -144,23 +156,39 @@ footer {
 
 /* == Start Game Button & 404 Button == */
 
-.game-start {
+.btn-game {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    background: #fff;
-    color: #000000;
-    border: 1px solid #000000;
-    padding: 0.5rem;
+}
+
+.game-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFD70085;
+    color: rgb(28, 72, 110);
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem;
     width: 12rem;
-    height: 2.5rem;
-    font-family: sans-serif;
-    z-index: 1;
-    position: relative;
-    outline: none;
-    overflow: hidden;
+    margin-bottom: 1.2rem;
+    font-family: "Lugrasimo", serif;
+    font-size: small;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Smooth transition */
+    outline: none;  /* Remove default outline */
+    cursor: pointer; /* Changes cursor on hover */
+}
+
+.game-start:hover {
+    transform: scale(1.05);  /* Slightly expands the button */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);  /* Adds a subtle shadow */
+}
+
+.game-start:focus {
+    outline: 2px solid rgb(28, 72, 110);  /* Adds a visible outline when focused */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);  /* Keeps the shadow */
 }
 /* == Restart Quiz Button == */
 /* == Modal == */
