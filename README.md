@@ -49,6 +49,11 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 - To attract a broad audience by providing a mix of educational and entertaining content.
 
 ### Colour Scheme
+We've used CSS for the colours and used colours from the original strike Bach App to make it feel authentic.
+
+we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) to generate our colour palette.
+
+![Color Design](assets/images/color-design.png)
 
 ### Typography
 
@@ -67,6 +72,12 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
+- [![Favicon](https://img.shields.io/badge/favicon-grey?logo=favicon&logoColor=3e3e7a)](https://favicon.io/) used for creating the App Logo.
+- [![Youtube](https://img.shields.io/badge/Youtube-grey?logo=Youtube&logoColor=CE0908)](https://www.youtube.com/) used for creating Audio.
+- [![w3school](https://img.shields.io/badge/w3school-grey?logo=w3schools&logoColor=008000)](https://www.w3schools.com/html/default.asp) used for creating Information.
+- [![wikipedia](https://img.shields.io/badge/wikipedia-grey?logo=wikipedia&logoColor=ffffff)](https://www.wikipedia.org/) used for asking questions.
+- [![Audio-Trimmer](https://img.shields.io/badge/audiotrimmer-grey?logo=audiotrimmer&logoColor=2d7d2d)](https://audiotrimmer.com/) used to trim audio size.
+
 
 [Back to top](#Melomaniac)
 
