@@ -22,6 +22,7 @@ The Empire Strikes Bach Musical Quiz App is an interactive, educational tool des
 -   [Collaborators](#Collaborators)
 -   [Testing](#testing)
 -   [Agile Development Process](#agile-development-process)
+-   [Deployment](#Deployment)
 -   [Credits](#credits)
 
 ## UX
@@ -51,7 +52,7 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 ### Colour Scheme
 We've used CSS for the colours and used colours from the original strike Bach App to make it feel authentic.
 
-we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) to generate our colour palette.
+we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) to generate our colour palette.
 
 ![Color Design](assets/images/color-design.png)
 
@@ -89,6 +90,116 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) t
 
 **Agile Methodology**
 
+Our project uses Agile methodology, a framework that enables us to create an interactive, multimedia-based musical quiz app that engages users through learning and entertainment, covering instrument identification, sound recognition, and pop culture music trivia.
+
+- Objectives:
+
+  - Build a platform for sound-based and visual quizzes.
+  - Ensure a seamless user experience with responsive design.
+  - Develop a scalable app that can integrate new features over time.
+  - Deliver the project in iterations, incorporating feedback continuously.
+
+- Core Agile Team
+
+  - **Development Team:** A cross-functional team that includes front-end and back-end developers, UI/UX designers, QA testers, and DevOps engineers. 
+  - **Scrum Master:** Facilitates the Agile process, ensuring the team follows Agile principles and removes any roadblocks that hinder progress. 
+  - **Team Members (TM):** Responsible for defining the vision and managing the product backlog. The TM ensures that the app aligns with the overall business goals.
+
+At the start of each sprint, our team engages in sprint planning to set the direction for our upcoming work, involving prioritization of the product backlog to address the most critical tasks first, defining clear sprint goals aligned with project milestones, and assigning tasks based on expertise and workload. Throughout development, we navigate trade-offs between scope, quality, time, and resources to maintain a balance between delivering high-quality work efficiently and managing priorities. Adopting Agile methodologies allows us to remain adaptable and focused, ensuring we meet user needs while striving for excellence.
+
+- Conclusion
+
+  This Agile methodology provides a clear, flexible, and iterative approach to building our musical quiz app. By delivering features incrementally, regularly reviewing feedback, and making adjustments as needed, it ensure that the app meets user expectations, stays aligned with business goals, and continuously improves over time.
+
+
+Through this process, user stories, issues, and tasks were planned, then tracked on a daily basis using [MIRO APP](https://miro.com/app/board/uXjVLdWR2kA=/)
+
+**GitHub Issues**
+
+[GitHub Issues](https://github.com/md-ash-dot/classical-music-hackathon) served as an Agile tool.
+
+It also helped with iterations on a daily basis.
+
+screen shots of open and closed issues here
+
+**Collaboration Tools** 
+
+The team used Slack where we had two or three meetings per day and to message in for quick collaboration purposes and Github projects to track ideas, User Stories, Bugs and Time plan.
+
+The Team used Slack team channel Canvas to ensure everyone stayed updated on project progress and discussions.
+
+
+[Back to top](#Melomaniac)
+   
+
+## Deployment
+
+The live deployed application can be found deployed on [github-pages](https://md-ash-dot.github.io/classical-music-hackathon/).
+
+### Deployment to GitHub Pages
+
+This project was deployed on GitHub pages using the following steps:
+
+- From the project's repository, go to the settings tab.
+
+- From the left-hand-menu, select the pages tab.
+
+- Select the Main branch from under the Source section dropdown and click Save.
+
+- After a few minutes, a message will display to indicate a successful deployment and provide a Live link.
+
+### Local Deployment
+
+**GitHub**
+
+First a new reposiotry was created in github then this project can be cloned or forked in order to make a local copy on your own system.
+
+Once the project is cloned or forked, in order to run it locally you will need to use the command 'npm run start' to start the app.
+
+
+**Version Control**
+
+For version control the following steps were made:
+
+- If any changes were made to the Gitpod or VS Code project.
+
+- First files were made ready for commit with command - 'git add filename or git add .' second option to add all files.
+
+- To commit the changes using the following command - git commit -m "This is my commit" Note the brief description at the end of the command to make you aware of what changes have occurred.
+
+- To then move the changes to GitHub, use the following command - git push your branch name.
+
+- Create a pull request in GitHub which another member can then approve.
+
+**Cloning**
+
+You can clone the repository by following these steps:
+
+- Navigate to the repository you choose to clone in your GitHub.
+
+- Clicking on the arrow of the green button named "Code" at the top of the file.
+
+- Then select "Local" then under local select "HTTPS" and then copy that URL.
+
+- Navigate to your code editor and within the terminal change the directory to the location you wish to clone the repository to.
+
+- Type "git clone" and paste the copied HTTPS link from GitHub.
+
+- Press enter and git will clone the repository to your local machine.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+**Forking**
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository.
+
+- At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+- Click the create button, once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+[Back to top](#Melomaniac)
 
 
 ### Credits

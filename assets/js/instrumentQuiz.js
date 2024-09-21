@@ -11,11 +11,11 @@ const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');  // Add path t
 const questionEl = document.getElementById('question');
 const optionsEl = document.getElementById('options');
 const nextBtn = document.getElementById('next-btn');
-const feedbackEl = document.createElement('div'); // Feedback container for correct/incorrect answer
+const feedbackEl = document.getElementById('feedback');
 const scoreEl = document.getElementById('score');
 const resultEl = document.getElementById('result');
 const quizContainerEl = document.getElementById('quiz-container');
-const pastScoresEl = document.createElement('div'); // Container for past scores
+const pastScoresEl = document.getElementById('past-scores');
 
 // Function to shuffle an array using Fisher-Yates algorithm
 function shuffle(array) {
@@ -44,12 +44,25 @@ function loadQuestion() {
     // Display the options
     optionsEl.innerHTML = ''; // Clear previous options
     currentQuestion.options.forEach((option, index) => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-            <input type="radio" name="option" id="option${index}" value="${option}" onclick="enableNext()">
-            <label for="option${index}">${option}</label>
-        `;
-        optionsEl.appendChild(li);
+        const optionId = `option${index}`; // Unique ID for each option
+
+        // Create radio input element
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.id = optionId;
+        input.name = 'quiz-option';
+        input.value = option;
+        input.onclick = enableNext; // Enable "Next" button when an option is clicked
+
+        // Create label element
+        const label = document.createElement('label');
+        label.setAttribute('for', optionId);
+        label.classList.add('game-start');
+        label.innerText = option;
+
+        // Append input and label to the options container
+        optionsEl.appendChild(input);
+        optionsEl.appendChild(label);
     });
 
     // Disable the "Next" button until an option is selected
@@ -66,7 +79,7 @@ function checkAnswer() {
     if (answerChecked) return; // Prevent checking the answer again
     answerChecked = true; // Mark the answer as checked
     
-    const selectedOption = document.querySelector('input[name="option"]:checked').value;
+    const selectedOption = document.querySelector('input[name="quiz-option"]:checked').value;
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
     // Create feedback and play corresponding audio
@@ -88,6 +101,10 @@ function nextQuestion() {
     checkAnswer(); // Show feedback for the user's answer
 
     if (answerChecked) {
+        const optionButtons = document.querySelectorAll('input[name="quiz-option"]');
+        optionButtons.forEach(button => {
+            button.disabled = true; // Disable each radio button
+        });
         currentQuestionIndex++; // Move to the next question after feedback is shown
 
         if (currentQuestionIndex < selectedQuestions.length) {
@@ -103,52 +120,29 @@ function nextQuestion() {
     }
 }
 
-// Function to save the score to localStorage
-function saveScoreToLocal() {
-    const currentScores = getScoresFromLocal();
-    currentScores.push(score); // Add the new score to the array
-    localStorage.setItem('quizScores', JSON.stringify(currentScores)); // Save updated scores back to localStorage
-}
+// Store the highest score in localStorage if the current score is greater
+function storeHighestScore() {
+    const highestScore = localStorage.getItem('highestScore') || 0;
 
-// Function to retrieve scores from localStorage
-function getScoresFromLocal() {
-    const scores = localStorage.getItem('quizScores');
-    return scores ? JSON.parse(scores) : []; // If no scores are stored, return an empty array
-}
-
-// Function to display past scores
-function displayPastScores() {
-    const pastScores = getScoresFromLocal();
-    pastScoresEl.innerHTML = '<h3>Past Scores:</h3><ul>';
-    
-    if (pastScores.length === 0) {
-        pastScoresEl.innerHTML += '<li>No previous scores.</li>';
-    } else {
-        pastScores.forEach((score, index) => {
-            pastScoresEl.innerHTML += `<li>Game ${index + 1}: ${score}</li>`;
-        });
+    if (score > highestScore) {
+        localStorage.setItem('highestScore', score);
     }
-
-    pastScoresEl.innerHTML += '</ul>';
-    resultEl.appendChild(pastScoresEl); // Add the past scores to the result section
 }
 
 // Function to end the quiz and display the score
 function endQuiz() {
-    // Hide the quiz container and show the result
-    quizContainerEl.style.display = 'none';
-    resultEl.style.display = 'block';
+    storeHighestScore(); // Store the highest score if applicable
+    quizContainerEl.style.display = 'none'; // Hide the quiz container
+    resultEl.style.display = 'block'; // Show the result section
 
-    // Display the final score
-    scoreEl.innerText = `You scored ${score} out of ${selectedQuestions.length}`;
-
-    // Save the current score to localStorage
-    saveScoreToLocal();
-
-    // Display past scores
-    displayPastScores();
+    // Display final score and the highest score
+    const highestScore = localStorage.getItem('highestScore');
+    scoreEl.innerHTML = `${score} out of ${selectedQuestions.length}`;
+    pastScoresEl.innerHTML = `Highest Score: ${highestScore}`;
 }
 
 // Start the quiz: Select 3 random questions and load the first question
-selectRandomQuestions(); // Select 3 random questions
-loadQuestion(); // Load the first question
+// Initialize the quiz
+selectRandomQuestions();
+loadQuestion();
+nextBtn.addEventListener('click', nextQuestion);

@@ -12,46 +12,52 @@
     <!-- stylesheet or sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../assets/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 </head>
 
 <body>
     <header>
-        <span class="logo">
-            <img id="logo" src="assets/images/musiclogo.png" alt="Logo for the game">
-            Melomaniacs</span>
-        <div id="container">
+        <div class="nav-bar">
+            <img id="logo" class="logo" src="assets/images/musiclogo.png" alt="Logo for the game">
+            <nav class="nav-item">
+                <a href="index.html" class="active" aria-label="Link to Home Page (current page)">Home</a>
+                <a href="team.html" aria-label="Link to Team Page(opens in the same tab)">Team</a>
+            </nav>
         </div>
     </header>
     <main>
+
         <h1 class="welcome-hidden">Welcome to music trivia</h1>
         <div class="welcome-container">
             <img class="welcome-image" src="assets/images/melomaniac-gold.png" alt="text welcome to music trivia">
         </div>
         <div class="btn-game">
             <a id="start-game-pop" class="game-start" aria-label="button to start pop culture game">Pop Culture</a>
-            <a id="start-game-instrument" class="game-start" aria-label="button to start instrument game">Musical
+            <a href="instrumentQuiz.html" id="start-game-instrument" class="game-start"
+                aria-label="button to start instrument game">Musical
                 Instruments</a>
             <a id="start-game-sounds" class="game-start" aria-label="button to start sounds game">Musical Sounds</a>
             <a id="start-game-composers" class="game-start" aria-label="button to start composers game">Musical
                 Composers</a>
         </div>
 
+
     </main>
     <footer>
-        Created by The Empire Strikes Bach (educational purposes)
+        Created by The Empire Strikes Bach - Code Institute Hackathon, Classical Music Month Team 7
     </footer>
 
     <!-- Scripts -->
-
     <script type="module" src="assets/js/game.js"></script>
     <script type="module" src="assets/js/instrumentQuestions.js"></script>
     <script type="module" src="assets/js/popCultureQuestions.js"></script>
     <script type="module" src="assets/js/soundQuestions.js"></script>
     <script type="module" src="assets/js/composerQuestions.js"></script>
+    <script src="https://kit.fontawesome.com/1f32015eb0.js" crossorigin="anonymous"></script>
+
 
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- modal for answer comparison-->
