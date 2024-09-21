@@ -168,7 +168,7 @@ footer {
     align-items: center;
     justify-content: center;
     background: #FFD70085;
-    color: rgb(28, 72, 110);
+    color: #11147a;
     border: none;
     border-radius: 20px;
     padding: 0.6rem;
@@ -176,19 +176,24 @@ footer {
     margin-bottom: 1.2rem;
     font-family: "Lugrasimo", serif;
     font-size: small;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;  /* Smooth transition */
-    outline: none;  /* Remove default outline */
-    cursor: pointer; /* Changes cursor on hover */
+    transition: transform 0.2s ease, box-shadow 0.5s ease;
+    outline: none;
+    cursor: pointer;
 }
 
 .game-start:hover {
-    transform: scale(1.05);  /* Slightly expands the button */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);  /* Adds a subtle shadow */
+    transform: scale(1.05);
+    background-color: #FFD700;
+    box-shadow: 0 0 10px rgba(244, 216, 57, 0.7);
+    text-shadow: 0 0 5px rgba(22, 34, 44, 0.3);
 }
 
 .game-start:focus {
-    outline: 2px solid rgb(28, 72, 110);  /* Adds a visible outline when focused */
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);  /* Keeps the shadow */
+    outline: 2px solid rgb(28, 72, 110);
+    background-color: #FFD700;
+    box-shadow: 0 0 10px rgba(244, 216, 57, 0.7);
+    text-shadow: 0 0 5px rgba(22, 34, 44, 0.3);
+
 }
 /* == Restart Quiz Button == */
 /* == Modal == */
