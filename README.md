@@ -1,5 +1,5 @@
 
-# [Melomeniac](https://md-ash-dot.github.io/classical-music-hackathon/)
+# [Melomaniac](https://md-ash-dot.github.io/classical-music-hackathon/)
 
 ![Project Title](assets/images/readme/intro.png)
 =======
@@ -61,7 +61,7 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) t
 
 ### Features
 
-[Back to top](#Melomeniac)
+[Back to top](#Melomaniac)
 ## Tools & Technologies Used
 
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -79,7 +79,7 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) t
 - [![Audio-Trimmer](https://img.shields.io/badge/audiotrimmer-grey?logo=audiotrimmer&logoColor=2d7d2d)](https://audiotrimmer.com/) used to trim audio size.
 
 
-[Back to top](#Melomeniac)
+[Back to top](#Melomaniac)
 
 ### Collaborators
 
