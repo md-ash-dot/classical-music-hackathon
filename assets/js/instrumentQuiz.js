@@ -4,8 +4,8 @@ let selectedQuestions = [];
 let answerChecked = false; // To track if feedback is shown
 
 // Audio files for feedback
-const correctSound = new Audio('assets/audio/correctAnswer.mp3');  // Add path to correct answer sound
-const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');  // Add path to incorrect answer sound
+const correctSound = new Audio('assets/audio/correctAnswer.mp3');
+const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');
 
 // Selectors for HTML elements
 const questionEl = document.getElementById('question');

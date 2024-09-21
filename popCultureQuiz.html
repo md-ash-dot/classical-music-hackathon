@@ -28,46 +28,44 @@
             </nav>
         </div>
     </header>
+
     <main>
-
-        <h1 class="welcome-hidden">Welcome to music trivia</h1>
-        <div class="welcome-container">
-            <img class="welcome-image" src="assets/images/melomaniac-gold.png" alt="text welcome to music trivia">
+        <div id="quiz-container" class="quiz-container ">
+            <h1>Pop Quiz Game</h1>
+            <p id="question-number"></p>
+            <button id="play-audio-btn" onclick="playAudio()">Play Audio</button>
+            <audio id="audio-player" controls style="display:none;"></audio>
+            <div id="options" class="options-container">
+                <!-- Options will be injected here -->
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-btn" onclick="nextQuestion()">Answer</button>
         </div>
-        <div class="btn-game">
-            <a href="popCultureQuiz.html" id="start-game-pop" class="game-start"
-                aria-label="button to start pop culture game">Pop Culture</a>
-            <a href="instrumentQuiz.html" id="start-game-instrument" class="game-start"
-                aria-label="button to start instrument game">Musical Instruments</a>
-            <a id="start-game-sounds" class="game-start" aria-label="button to start sounds game">Musical Sounds</a>
-            <a id="start-game-composers" class="game-start" aria-label="button to start composers game">Musical
-                Composers</a>
+        <div id="result" class="result">
+            <p id="final-score" style="display:none;"></p>
+            <div id="score-feedback"></div>
+            <p id="high-score" style="display:none;"></p>
+            <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
+            <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
         </div>
-
 
     </main>
     <footer>
-        Created by The Empire Strikes Bach - Code Institute Hackathon, Classical Music Month Team 7
+        Created by The Empire Strikes Bach (educational purposes)
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="assets/js/game.js"></script>
-    <script type="module" src="assets/js/instrumentQuestions.js"></script>
-    <script type="module" src="assets/js/popCultureQuestions.js"></script>
-    <script type="module" src="assets/js/soundQuestions.js"></script>
-    <script type="module" src="assets/js/composerQuestions.js"></script>
-    <script src="https://kit.fontawesome.com/1f32015eb0.js" crossorigin="anonymous"></script>
-
+    <script src="assets/js/popCultureQuestions.js"></script>
+    <script src="assets/js/popCultureQuiz.js"></script>     <!-- Quiz logic file -->
 
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- modal for answer comparison-->
-    <div id="answerModal" class="modal">
+    <!-- <div id="answerModal" class="modal">
         <div id="modal-content" class="modal-content">
             <span id="modal-message"></span>
-            <button id="next-question-modal-button" type="button" class="modal-game-start"
-                aria-label="Button for next trivia question">next question</button>
+            <button id="next-question-modal-button" type="button" class="modal-game-start" aria-label="Button for next trivia question">next question</button>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
