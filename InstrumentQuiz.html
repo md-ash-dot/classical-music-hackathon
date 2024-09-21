@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Musicoligists can test their knowledge here">
-    <meta name="keywords" content="pop culture, soundtracks, quiz, knowledge, musical instruments, music, classical music, opera">
-    <title>Testing your musical knowledge</title>
+    <meta name="description" content="Musicoligists can test their knowledge on musical instruments here">
+    <meta name="keywords" content="quiz, knowledge, musical instruments, music, classical music, opera">
+    <title>Instrument quiz</title>
 
     <!-- stylesheet or sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,21 +19,22 @@
 <body>
     <header>
         <span class="logo"><a href="" aria aria-label="link to homepage">Melomaniacs</a></span>
-        <div id="container">
-    </div>
-        </div>
     </header>
+
     <main>
-        <div id="quiz-container">
-            <h2 id="question"></h2>
-            <ul id="options">
+        <div id="quiz-container" class="quiz-container ">
+            <h1>Quiz Game</h1>
+            <p id="question"></p>
+            <div id="options" class="options-container">
                 <!-- Options will be injected here -->
-            </ul>
-            <button id="next-btn" onclick="nextQuestion()" disabled>Next</button>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <button id="next-btn" class="next-btn" disabled>Next</button>
         </div>
-        <div id="result" style="display:none;">
-            <h2>Quiz Completed!</h2>
+        <div id="result" class="result">
+            <h2>Your final score is:</h2>
             <p id="score"></p>
+            <div id="past-scores"></div>
         </div>
 
     </main>
