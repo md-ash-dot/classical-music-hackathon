@@ -111,7 +111,6 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: "Noto Sans", sans-serif;
-    font-size: normal;
     text-align: center;
     color: white;
     padding: 0.5rem 1rem;
@@ -234,7 +233,6 @@ footer {
     box-shadow: 0 0 15px #c0c0c090;
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
-
 
 /* == Instrument quiz == */
 /* Container for the quiz options */
