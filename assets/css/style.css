@@ -110,14 +110,16 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    font-family: sans-serif;
-    font-size: 1rem;
+    font-family: "Noto Sans", sans-serif;
+    font-size: normal;
     text-align: center;
     color: white;
     padding: 0.5rem 1rem;
-    background-color: #000000;
-    border-top: 1px solid #fff;
+    background-color: #00000065;
+    border-top: 1px solid #c0c0c080;
+    padding-top: 0.5rem;
     margin-top: 3rem;
+    box-shadow: 0 -5px 10px #c0c0c070;
 }
 
 /* == Home & Quiz == */
