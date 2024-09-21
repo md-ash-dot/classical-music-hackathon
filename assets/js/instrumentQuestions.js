@@ -1,5 +1,5 @@
 // Define an array to hold your quiz questions
-export const instrumentQuestions = [
+const instrumentQuestions = [
     // Add questions here
     {
         question: "How many strings does a violin have?",
