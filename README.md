@@ -51,7 +51,7 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 ### Colour Scheme
 We've used CSS for the colours and used colours from the original strike Bach App to make it feel authentic.
 
-we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-7c7c7c) to generate our colour palette.
+we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) to generate our colour palette.
 
 ![Color Design](assets/images/color-design.png)
 
