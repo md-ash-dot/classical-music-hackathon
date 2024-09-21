@@ -33,7 +33,6 @@ body {
         url('../images/faded-background.jpg') center center / cover no-repeat,
         rgba(0, 0, 0, 0.6); /* Solid color underlay */
     min-height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -84,7 +83,7 @@ footer {
     padding: 0.5rem 1rem;
     background-color: #000000;
     border-top: 1px solid #fff;
-    z-index: 3;
+    margin-top: 3rem;
 }
 
 .note-div {
@@ -151,6 +150,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: -3rem;
+    margin-bottom: 1rem;
 }
 
 .game-start {
@@ -192,3 +192,12 @@ footer {
 /* == Variables == */
 /* == Sounds == */
 /* == Media Queries == */
+@media screen and (max-width: 760px) {
+    .welcome-image {
+        margin-top: 0;
+    }
+
+    .btn-game {
+        margin-top: 0;
+    }
+}
