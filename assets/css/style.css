@@ -19,10 +19,10 @@ header {
 }
 
 .nav-bar {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 1rem;
 }
@@ -50,6 +50,7 @@ header {
     width: auto;
     border: none;
     border-radius: 50%;
+    margin-right: 3rem;
 }
 
 /* == Backgrounds == */
