@@ -33,34 +33,29 @@ export const composerQuestions = [
         answer: "Schubert"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "This German composer is known for his operas 'The Ring Cycle' and 'Tristan und Isolde'.",
+        options: ["Wagner", "Beethoven", "Schumann", "Mendelssohn"],
+        answer: "Wagner"
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     {
         question: "",
         options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        answer: ""
     },
     
 ];
