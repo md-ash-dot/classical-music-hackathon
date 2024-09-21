@@ -1,5 +1,5 @@
 
-# [Melomeniac](https://md-ash-dot.github.io/classical-music-hackathon/)
+# [Melomaniac](https://md-ash-dot.github.io/classical-music-hackathon/)
 
 ![Project Title](assets/images/readme/intro.png)
 =======
@@ -56,7 +56,7 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 
 ### Features
 
-[Back to top](#Melomeniac)
+[Back to top](#Melomaniac)
 ## Tools & Technologies Used
 
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -68,7 +68,7 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 
-[Back to top](#Melomeniac)
+[Back to top](#Melomaniac)
 
 ### Collaborators
 
