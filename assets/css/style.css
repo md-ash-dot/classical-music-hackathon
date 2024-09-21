@@ -60,7 +60,7 @@ body {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     background:
-        url('../images/faded-background.jpg') center center / cover no-repeat,
+        url('../images/faded-background.webp') center center / cover no-repeat,
         rgba(0, 0, 0, 0.6); /* Solid color underlay */
     min-height: 100vh;
     position: relative;
