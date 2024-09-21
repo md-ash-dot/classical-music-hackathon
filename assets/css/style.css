@@ -197,22 +197,42 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     outline: none;
     cursor: pointer;
+    position: relative;
+}
+
+.game-icon-start {
+    display: none;
+    position: absolute;
+    width: 2rem;
+}
+
+/* Initially show the text */
+.game-start .game-text {
+    display: inline-block;
+}
+
+.game-start:hover .game-icon-start {
+    display: block;
+}
+
+.game-start:hover .game-text {
+    display: none;
 }
 
 .game-start:hover {
     transform: scale(1.05);
     background-color: #dde83a;
-    box-shadow: 0 0 15px rgba(235, 208, 56, 0.7);
+    box-shadow: 0 0 15px #c0c0c090;
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
 
 .game-start:focus {
     outline: 2px solid rgb(28, 72, 110);
     background-color: #dde83a;
-    box-shadow: 0 0 15px rgba(235, 208, 56, 0.7);
+    box-shadow: 0 0 15px #c0c0c090;
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
-
 }
+
 
 /* == Instrument quiz == */
 /* Container for the quiz options */
@@ -346,8 +366,8 @@ footer {
 }
 
 /* == Media Queries == */
-@media screen and (max-width: 760px) {
-    .nav-bar{
+@media screen and (max-width: 768px) {
+    .nav-bar {
         width: 80%;
         padding-top: 0.2rem;
     }
@@ -361,6 +381,17 @@ footer {
     }
 
     .btn-game {
-        margin-top: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .welcome-image {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .btn-game {
+        margin-top: 1rem;
     }
 }
