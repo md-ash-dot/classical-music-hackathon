@@ -1,5 +1,5 @@
 /* Google Fonts import*/
-@import url(https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lugrasimo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
 
 /* == General == */
 
@@ -24,11 +24,23 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin: 1rem;
 }
 
 .nav-item a {
     padding: 0.5rem;
     margin-left: 0.7rem;
+    font-family: "Noto Sans", sans-serif;
+    color: #FFD700;
+    font-size: x-large;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    color: #C0C0C0;
+    border-radius: 10px;
+    outline: 2px solid #C0C0C0;
+    outline-offset: 2px;
 }
 
 .logo {
