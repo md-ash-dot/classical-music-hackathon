@@ -33,7 +33,6 @@ body {
         url('../images/faded-background.jpg') center center / cover no-repeat,
         rgba(0, 0, 0, 0.6); /* Solid color underlay */
     min-height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -193,3 +192,12 @@ footer {
 /* == Variables == */
 /* == Sounds == */
 /* == Media Queries == */
+@media screen and (max-width: 760px) {
+    .welcome-image {
+        margin-top: 0;
+    }
+
+    .btn-game {
+        margin-top: 0;
+    }
+}
