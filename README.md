@@ -54,7 +54,7 @@ We've used CSS for the colours and used colours from the original strike Bach Ap
 
 we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) to generate our colour palette.
 
-![Color Design](assets/images/color-design.png)
+![Color Design](assets/images/readme/color-design.png)
 
 ### Typography
 
