@@ -316,7 +316,16 @@ footer {
     height: 2.5rem;
 }
 
+/* Replay Options*/
+.replay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+
 /* == Restart Quiz Button == */
+
 /* == Modal == */
 /* == Variables == */
 /* == Sounds == */
