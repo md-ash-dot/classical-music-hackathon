@@ -1,7 +1,7 @@
 
 # [Melomeniac](https://md-ash-dot.github.io/classical-music-hackathon/)
 
-![Project Title](assests/images/intro.png)
+![Project Title](assets/images/readme/intro.png)
 =======
 
 
