@@ -89,6 +89,48 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) t
 
 **Agile Methodology**
 
+Our project uses Agile methodology, a framework that enables us to create an interactive, multimedia-based musical quiz app that engages users through learning and entertainment, covering instrument identification, sound recognition, and pop culture music trivia.
+
+- Objectives:
+
+  - Build a platform for sound-based and visual quizzes.
+  - Ensure a seamless user experience with responsive design.
+  - Develop a scalable app that can integrate new features over time.
+  - Deliver the project in iterations, incorporating feedback continuously.
+
+- Core Agile Team
+
+  - **Development Team:** A cross-functional team that includes front-end and back-end developers, UI/UX designers, QA testers, and DevOps engineers. 
+  - **Scrum Master:** Facilitates the Agile process, ensuring the team follows Agile principles and removes any roadblocks that hinder progress. 
+  - **Team Members (TM):** Responsible for defining the vision and managing the product backlog. The TM ensures that the app aligns with the overall business goals.
+
+At the start of each sprint, our team engages in sprint planning to set the direction for our upcoming work, involving prioritization of the product backlog to address the most critical tasks first, defining clear sprint goals aligned with project milestones, and assigning tasks based on expertise and workload. Throughout development, we navigate trade-offs between scope, quality, time, and resources to maintain a balance between delivering high-quality work efficiently and managing priorities. Adopting Agile methodologies allows us to remain adaptable and focused, ensuring we meet user needs while striving for excellence.
+
+- Conclusion
+
+  This Agile methodology provides a clear, flexible, and iterative approach to building our musical quiz app. By delivering features incrementally, regularly reviewing feedback, and making adjustments as needed, it ensure that the app meets user expectations, stays aligned with business goals, and continuously improves over time.
+
+
+Through this process, user stories, issues, and tasks were planned, then tracked on a daily basis using [MIRO APP](https://miro.com/app/board/uXjVLdWR2kA=/)
+
+**GitHub Issues**
+
+[GitHub Issues](https://github.com/md-ash-dot/classical-music-hackathon) served as an Agile tool.
+
+It also helped with iterations on a daily basis.
+
+screen shots of open and closed issues here
+
+**Collaboration Tools** 
+
+The team used Slack where we had two or three meetings per day and to message in for quick collaboration purposes and Github projects to track ideas, User Stories, Bugs and Time plan.
+
+The Team used Slack team channel Canvas to ensure everyone stayed updated on project progress and discussions.
+
+
+[Back to top](#Melomaniac)
+   
+
 
 
 ### Credits
