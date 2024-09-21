@@ -28,10 +28,9 @@ export const composerQuestions = [
         answer: "Tchaikovsky"
     },
     {
-        question: "",
-        options: ["", "", "", ""],
-        answer: "",
-        sound: ""
+        question: "This Austrian composer wrote over 600 songs, including the famous 'Ave Maria'.",
+        options: ["Mozart", "Beethoven", "Schubert", "Brahms"],
+        answer: "Schubert"
     },
     {
         question: "",
