@@ -31,7 +31,7 @@
     <main>
         <div id="quiz-container" class="quiz-container ">
             <h1>Pop Quiz Game</h1>
-            <p id="question-number"></p>
+            <p id="question"></p>
             <button id="play-audio-btn" onclick="playAudio()">Play Audio</button>
             <audio id="audio-player" controls style="display:none;"></audio>
             <div id="options" class="options-container">
@@ -41,11 +41,13 @@
             <button id="next-btn" onclick="nextQuestion()">Answer</button>
         </div>
         <div id="result" class="result">
-            <p id="final-score" style="display:none;"></p>
+            <p id="final-score"></p>
             <div id="score-feedback"></div>
-            <p id="high-score" style="display:none;"></p>
-            <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
-            <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
+            <p id="high-score"></p>
+            <div class="replay-container">
+                <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
+                <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
+            </div>
         </div>
     </main>
     <footer>
