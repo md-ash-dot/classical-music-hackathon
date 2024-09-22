@@ -239,7 +239,6 @@ footer {
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
 
-/* == Instrument quiz == */
 /* Container for the quiz options */
 .quiz-container {
     display: flex;
@@ -474,6 +473,16 @@ footer {
 }
 
 /* == Media Queries == */
+@media screen and (max-width: 400px) {
+    footer {
+        position: relative;
+        margin: 0;
+    }
+
+    .next-btn {
+        margin-bottom: 2rem;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .quiz-container h1 {
