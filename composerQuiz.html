@@ -30,16 +30,17 @@
     </header>
     <main>
         <div id="quiz-container" class="quiz-container ">
-            <h1>Composer Quiz</h1>
+            <h1>Do you know your composers?</h1>
             <p id="question"></p>
             <div id="options" class="options-container">
                 <!-- Options will be injected here -->
             </div>
-            <!--Hints-->
-            <button id="hint-btn" class="game-start">Show Hint</button>
-            <div id="hint" class="hint"></div>
             <div id="feedback" class="feedback"></div>
-            <button id="next-btn" class="next-btn" tabindex="0" disabled>Answer</button>
+            <div class="btn-container">
+                <button id="hint-btn" class="hint-btn">Show Hint</button>
+                <button id="next-btn" class="next-btn" tabindex="0" disabled>Answer</button>
+            </div>
+            <div id="hint" class="hint"></div>
         </div>
         <div id="result" class="result">
             <h2>Your final score is:</h2>
