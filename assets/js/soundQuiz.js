@@ -162,6 +162,7 @@ function storeHighestScore() {
 
 // End of quiz: Display final score and high score
 function endQuiz() {
+    storeHighestScore(); 
     // Hide quiz interface
     quizContainerEl.style.display = 'none'; // Hide the quiz container
 
