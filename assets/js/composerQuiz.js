@@ -127,12 +127,12 @@ function nextQuestion() {
         if (currentQuestionIndex < selectedQuestions.length) {
             setTimeout(() => { // Wait 2 seconds to show feedback before loading the next question
                 loadQuestion(); // Load the next question
-            }, 1000);
+            }, 2000);
         } else {
             // If the last question was just answered, show feedback and then end the quiz
             setTimeout(() => {
                 endQuiz(); // End the quiz after feedback is shown
-            }, 1000);
+            }, 2000);
         }
     }
 }
