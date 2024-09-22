@@ -16,6 +16,9 @@ h3 {
     font-family: "Noto Sans", sans-serif;
 }
 
+.hidden {
+    display: none;
+}
 /* == Header == */
 
 header {
@@ -115,6 +118,11 @@ main {
     position: absolute;
     top: 1.30svh;
     right: 0%;
+}
+
+.description {
+    text-align: center;
+    color: #d8a408;
 }
 
 /* == Footer == */
@@ -498,6 +506,17 @@ p.hint-text {
     background-color: #C0C0C0;
     border-radius: 30%;
     padding: 3px;
+}
+
+/* Progress bar */
+.progress-bar {
+    text-align: center;
+    color: #a7a5a5;
+    padding: 1em;
+}
+
+.current-q {
+    color: #d8a408;
 }
 
 /* Team Page */

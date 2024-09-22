@@ -77,6 +77,10 @@ function loadQuestion() {
 
     // Disable the "Next" button until an option is selected
     nextBtn.disabled = true;
+
+    // Display the progress bar
+    let progressBar = document.getElementsByClassName("progress");
+    progressBar[currentQuestionIndex].classList.add("current-q");
 }
 
 // Function to enable the "Next" button once an option is selected
