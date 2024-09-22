@@ -38,7 +38,7 @@ header {
     padding: 0.5rem;
     margin-left: 0.7rem;
     font-family: "Noto Sans", sans-serif;
-    color: #FFD700;
+    color: #c0c0c0;
     font-size: x-large;
 }
 
@@ -48,6 +48,10 @@ header {
     border-radius: 10px;
     outline: 2px solid #C0C0C0;
     outline-offset: 2px;
+}
+
+.active {
+    color: #d8a408;
 }
 
 .logo {
@@ -194,7 +198,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFD700;
+    background: #d8a408;
     color: #11147a;
     border: none;
     border-radius: 20px;
@@ -332,6 +336,15 @@ footer {
 }
 
 /* Next button styling (matching game-start) */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
 .next-btn {
     display: flex;
     align-items: center;
@@ -351,24 +364,44 @@ footer {
     outline: none;
     overflow: hidden;
     cursor: pointer;
-    margin-top: 1rem;
     box-shadow: 0 0 15px #ffd900f8;
     border-radius: 20px;
-    transition: box-shadow 0.2s ease text-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease, text-shadow 0.2s ease;
 }
 
 .next-btn:hover {
     transform: scale(1.05);
     background-color: #dde83a;
     box-shadow: 0 0 15px #c0c0c090;
-    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2 inset);
 }
 
 .next-btn:focus {
     outline: 2px solid rgb(28, 72, 110);
     background-color: #dde83a;
     box-shadow: 0 0 15px #c0c0c0bc;
-    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2 inset);
+}
+
+.hint-btn {
+    border: none;
+    border-radius: 50px;
+    background-color: #11147a;
+    color: #C0C0C0;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px #fff;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hint-btn:hover {
+    background-color: #333399;
+    transform: scale(1.1);
 }
 
 /* When the radio button is checked, change the label's background and text color */
@@ -415,8 +448,6 @@ footer {
     align-items: center;
     margin: 1rem 0;
 }
-
-/* == Restart Quiz Button == */
 
 /* Team Page */
 .team-intro {
@@ -532,7 +563,7 @@ footer {
     .quiz-container p {
         padding-bottom: 0;
         margin: 0 0.7rem;
-        width: 60%;
+        width: 95%;
         max-width: 100%;
         display: flex;
         justify-content: center;
@@ -544,7 +575,7 @@ footer {
     }
 
     .option-button {
-        width: 21rem;
+        width: 20rem;
         height: 3.2rem;
     }
 
