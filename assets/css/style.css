@@ -562,4 +562,20 @@ footer {
     .btn-game {
         margin-top: 1rem;
     }
+
+    .nav-item a {
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .logo {
+        height: 2rem;
+        margin-right: 3rem;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+
 }
