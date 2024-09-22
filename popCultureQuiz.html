@@ -21,18 +21,17 @@
 <body>
     <header>
         <div class="nav-bar">
-            <img id="logo" class="logo" src="assets/images/musiclogo.png" alt="Logo for the game">
+            <img id="logo" class="logo" src="assets/images/musiclogo.webp" alt="Logo for the game">
             <nav class="nav-item">
-                <a href="index.html" class="active" aria-label="Link to Home Page (current page)">Home</a>
+                <a href="index.html" aria-label="Link to Home Page (current page)">Home</a>
                 <a href="" aria-label="Link to Team Page(opens in the same tab)">Team</a>
             </nav>
         </div>
     </header>
-
     <main>
         <div id="quiz-container" class="quiz-container ">
             <h1>Pop Quiz Game</h1>
-            <p id="question-number"></p>
+            <p id="question"></p>
             <button id="play-audio-btn" onclick="playAudio()">Play Audio</button>
             <audio id="audio-player" controls style="display:none;"></audio>
             <div id="options" class="options-container">
@@ -42,13 +41,14 @@
             <button id="next-btn" onclick="nextQuestion()">Answer</button>
         </div>
         <div id="result" class="result">
-            <p id="final-score" style="display:none;"></p>
+            <p id="final-score"></p>
             <div id="score-feedback"></div>
-            <p id="high-score" style="display:none;"></p>
-            <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
-            <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
+            <p id="high-score"></p>
+            <div class="replay-container">
+                <a href="popCultureQuiz.html" class="game-start" aria-label="button to play pop culture quiz again">Play again</a>
+                <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
+            </div>
         </div>
-
     </main>
     <footer>
         Created by The Empire Strikes Bach (educational purposes)
@@ -59,14 +59,6 @@
     <script src="assets/js/popCultureQuiz.js"></script>     <!-- Quiz logic file -->
 
     <noscript>Your browser does not support JavaScript!</noscript>
-    <!-- modal for answer comparison-->
-    <!-- <div id="answerModal" class="modal">
-        <div id="modal-content" class="modal-content">
-            <span id="modal-message"></span>
-            <button id="next-question-modal-button" type="button" class="modal-game-start" aria-label="Button for next trivia question">next question</button>
-        </div>
-    </div> -->
-
 </body>
 
 </html>
