@@ -8,7 +8,7 @@
     <meta name="description" content="Musicoligists can test their knowledge here">
     <meta name="keywords"
         content="pop culture, soundtracks, quiz, knowledge, musical instruments, music, classical music, opera">
-    <title>Testing your musical knowledge</title>
+    <title>404 Melomaniac</title>
     <!-- stylesheet or sheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- favicon -->
@@ -23,42 +23,31 @@
         <div class="nav-bar">
             <img id="logo" class="logo" src="assets/images/musiclogo.webp" alt="Logo for the game">
             <nav class="nav-item" role="navigation">
-                <a href="index.html" aria-label="Link to Home Page (current page)">Home</a>
+                <a href="index.html" class="active" aria-label="Link to Home Page (current page)">Home</a>
                 <a href="team.html" aria-label="Link to Team Page(opens in the same tab)">Team</a>
             </nav>
         </div>
     </header>
     <main>
-        <div id="quiz-container" class="quiz-container">
-            <h1>Quiz Game</h1>
-            <p id="question"></p>
-            <div id="options" class="options-container">
-                <!-- Options will be injected here -->
-            </div>
-            <div id="feedback" class="feedback"></div>
-            <button id="next-btn" class="next-btn" tabindex="0" disabled>Answer</button>
+        <div class="welcome-container">
+            <img class="welcome-image" src="assets/images/melomaniac-gold.webp" alt="text welcome to music trivia">
         </div>
-        <div id="result" class="result">
-            <h2>Your final score is:</h2>
-            <p id="score"></p>
-            <div id="score-feedback"></div>
-            <div id="past-scores"></div>
-            <div class="replay-container">
-                <a href="instrumentQuiz.html" class="game-start" aria-label="button to play instrument quiz again">Play
-                    again</a>
-                <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different
-                    game</a>
-            </div>
+        <div class="msg-container">
+            <h1>Sorry we cant find what you are looking for. Lets get you Bach!</h1><br>
+            <a href="index.html" class="game-start"
+            aria-label="button to return to homepage">
+            <span class="msg-text">Take Me Home</span></a>
         </div>
-        <button id="mute-btn" class="mute-btn"><i class="fa-solid fa-volume-xmark"></i><br>Sound Off</button>
     </main>
     <footer>
         Created by The Empire Strikes Bach (Team 7) - Code Institute Hackathon, Classical Music Month
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/instrumentQuestions.js"></script>
-    <script src="assets/js/instrumentQuiz.js"></script>     <!-- Quiz logic file -->
+    <script type="module" src="assets/js/instrumentQuestions.js"></script>
+    <script type="module" src="assets/js/popCultureQuestions.js"></script>
+    <script type="module" src="assets/js/soundQuestions.js"></script>
+    <script type="module" src="assets/js/composerQuestions.js"></script>
     <script src="https://kit.fontawesome.com/1f32015eb0.js" crossorigin="anonymous"></script>
 
     <noscript>Your browser does not support JavaScript!</noscript>

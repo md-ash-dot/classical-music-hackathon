@@ -31,10 +31,11 @@ const composerQuestions = [
         hint: "He also composed the '1812 Overture', which famously features cannon fire in its score."
     },
     {
-        question: "This Austrian composer wrote over 600 songs, including the famous 'Ave Maria'.",
-        options: ["Mozart", "Beethoven", "Schubert", "Brahms"],
-        answer: "Schubert",
-        hint: "Despite his short life of only 31 years, he was incredibly prolific and is known for his lieder (art songs)."
+        question: "This British composer is famous for his musicals, including 'Miss Siagon' and 'Joseph and the Amazing Technicolor Dreamcoat'.",
+        options: ["Andrew Lloyd Webber", "Stephen Sondheim", "Leonard Bernstein", "Richard Rodgers"],
+        answer: "Andrew Lloyd Webber",
+        hint: "He is one of the most successful composers of musical theatre."
+
     },
     {
         question: "This German composer is known for his operas 'The Ring Cycle' and 'Tristan und Isolde'.",
