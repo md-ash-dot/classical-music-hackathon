@@ -512,6 +512,10 @@ footer {
     .btn-game {
         margin-top: 1rem;
     }
+
+    footer {
+        font-size: small;
+    }
 }
 
 @media screen and (min-width: 1020px) {
