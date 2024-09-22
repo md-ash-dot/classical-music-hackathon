@@ -41,7 +41,7 @@ function loadQuestion() {
 
     // Display the question
     questionEl.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
-    
+
     // Display the options
     optionsEl.innerHTML = ''; // Clear previous options
     currentQuestion.options.forEach((option, index) => {
@@ -58,7 +58,7 @@ function loadQuestion() {
         // Create label element
         const label = document.createElement('label');
         label.setAttribute('for', optionId);
-        label.classList.add('game-start');
+        label.classList.add('option-button');
         label.innerText = option;
 
         // Append input and label to the options container
@@ -79,7 +79,7 @@ function enableNext() {
 function checkAnswer() {
     if (answerChecked) return; // Prevent checking the answer again
     answerChecked = true; // Mark the answer as checked
-    
+
     const selectedOption = document.querySelector('input[name="quiz-option"]:checked').value;
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
@@ -133,7 +133,7 @@ function storeHighestScore() {
 // Display a result feedback based on the amount of correct answers
 function displayScoreFeedback(score) {
     let message;
-    
+
     if (score === 0) {
         message = "Don't worry, even Mozart had to start somewhere!";
     } else if (score <= 4) {
@@ -145,7 +145,7 @@ function displayScoreFeedback(score) {
     } else {
         message = "Maestro! Your knowledge of composers is truly legendary! You're a melomaniac!";
     }
-    
+
     scoreFeedbackEl.innerText = message; // Display the message in the HTML
 }
 
