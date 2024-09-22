@@ -261,6 +261,15 @@ footer {
     margin: 1rem 0;
 }
 
+.play-audio-btn {
+    color: #c0c0c0;
+    background-color: #FFD700;
+    font-size: 3rem;
+    border: none;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
 /* Hide the default radio button */
 .options-container input[type="radio"] {
     display: none;
@@ -337,9 +346,6 @@ footer {
 
 /* == Restart Quiz Button == */
 
-/* == Modal == */
-/* == Variables == */
-/* == Sounds == */
 /* Team Page */
 .team-intro {
     max-width: 800px;
