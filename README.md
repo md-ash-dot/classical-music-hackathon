@@ -62,7 +62,31 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) t
 
  ![Google Font](assets/images/google-font.png)
 
+## User Stories
+
+### Landing Page 
+
+- As a user, I should be able to figure out what a site is about in 10 seconds.
+
 ### Wireframes
+
+
+To follow best practices, wireframes were developed to help with development.
+We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wireframes.
+
+**Sections:**
+
+| Mobile Page | Desktop Page | Musical Quiz Page |
+| --- | --- | --- |
+| ![Mobile Page Screenshot](assets/images/readme/melomaniac-home-mobile.png) | ![Game Page Screenshot](assets/images/readme/desktop.png) | ![Musical Quiz Page](assets/images/readme/quiz.png) |
+
+
+| Team Page | Quiz Page |
+| --- | --- |
+| ![Contact Page Screenshot](assets/images/readme/team.png) | ![About Page Screenshot](assets/images/readme/quiz.png)
+
+[Back to top](#Melomaniac)
+
 
 ### Features
 
