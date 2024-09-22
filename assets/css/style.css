@@ -288,6 +288,28 @@ footer {
     display: none;
 }
 
+/*Option Buttons*/
+.option-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFD700;
+        color: #11147a;
+        border: none;
+        border-radius: 20px;
+        padding: 0.6rem;
+        width: 30rem;
+        height: 3rem;
+        margin-bottom: 1.2rem;
+        font-family: "Lugrasimo", serif;
+        font-size: large;
+        font-weight: 600;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+}
+
 /* Next button styling (matching game-start) */
 .next-btn {
     display: flex;
@@ -301,8 +323,8 @@ footer {
     font-weight: 400;
     letter-spacing: 1.5px;
     padding: 0.5rem;
-    width: 12rem;
-    height: 2.5rem;
+    width: 15rem;
+    height: 3rem;
     z-index: 1;
     position: relative;
     outline: none;
@@ -311,6 +333,20 @@ footer {
     margin-top: 1rem;
     box-shadow: 0 0 15px #ffd900f8;
     border-radius: 20px;
+}
+
+.next-btn:hover {
+    transform: scale(1.05);
+    background-color: #dde83a;
+    box-shadow: 0 0 15px #c0c0c090;
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
+}
+
+.next-btn:focus {
+    outline: 2px solid rgb(28, 72, 110);
+    background-color: #dde83a;
+    box-shadow: 0 0 15px #c0c0c0bc;
+    text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
 
 /* When the radio button is checked, change the label's background and text color */
