@@ -1,5 +1,5 @@
 // Define an array to hold your quiz questions
-export const composerQuestions = [
+const composerQuestions = [
     {
         question: "This composer wrote 'The Four Seasons'.",
         options: ["Mozart", "Bach", "Vivaldi", "Handel"],

@@ -86,7 +86,7 @@ function checkAnswer() {
     // Create feedback and play corresponding audio
     if (selectedOption === currentQuestion.answer) {
         score++;
-        feedbackEl.innerHTML = `<p style="color: green;">Correct!</p>`;
+        feedbackEl.innerHTML = `<p style="color: green;">Correct! Well done.</p>`;
         correctSound.play(); // Play correct answer sound
     } else {
         feedbackEl.innerHTML = `<p style="color: red;">Wrong! The correct answer was: ${currentQuestion.answer}</p>`;
