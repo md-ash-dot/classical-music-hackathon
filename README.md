@@ -112,6 +112,21 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
 ### Collaborators
 
+We would like to extend our sincere gratitude to the talented team of developers who contributed their time, expertise, and creativity to the creation of our musical quiz app. This project would not have been possible without the collaborative efforts and dedication of each member. Their technical skills, innovative problem-solving, and passion for music and technology have been integral to the success of this app.
+
+Thank you for your invaluable contributions and commitment to excellence.
+
+| Team Member | Role | GitHub |
+| --- | --- | --- |
+| Gemma | UI/UX designer extraordinaire | [Github](https://github.com/GemmaButcher-dev) |
+| Iryna | JavaScript master | [GitHub](https://github.com/irasan) |
+| James | Jack of all trades | [Github](https://github.com/broken-helix) |
+| Martins | The master of The README | [Github](https://github.com/Ebuka-martins) |
+| Muhammed | Scrum Lead, Deployment, Project Setup, Epics, Agile | [Github](https://github.com/md-ash-dot/) |
+| Maria | Jack of all trades | [Github](https://github.com/maria-grozova) |
+| Kiree |  Jack of all trades | [Github](https://github.com/Swewi) |
+
+
 ### Testing
 
 ## Agile Development Process
