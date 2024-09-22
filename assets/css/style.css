@@ -382,6 +382,13 @@ footer {
 }
 
 /* == Media Queries == */
+@media screen and (max-width: 600px) {
+    .quiz-container { 
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav-bar {
         width: 80%;
