@@ -88,9 +88,80 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 [Back to top](#Melomaniac)
 
 
-### Features
+## Features
+
+- **Main Page**
+
+  - The main page of this musical quiz app is designed to allow users to test their knowledge across various categories of music. Users are welcomed with a clean, interactive interface, where they can select from four quiz options: Pop Culture, Musical Instruments, Instrument Sounds, and Composers. Each option is represented by an icon, making it visually appealing and easy to navigate. The page also provides links to a team page and displays the app's logo.
+
+  It’s user-friendly, inviting music lovers to engage with fun trivia games while learning more about different musical genres and elements.
+
+  ![Main Page Screenshot](assets/images/readme/main-page.png)
+
+
+- **Pop Culture Page**
+
+  - The Pop Culture option in the musical quiz app tests your knowledge of music as it relates to popular culture. This quiz likely covers questions about famous soundtracks, iconic songs, popular artists, and musical trends from movies, TV shows, and other entertainment media. It's a fun way to challenge your understanding of how music has influenced and been featured in mainstream culture. 
+
+   ![Pop culture Page](assets/images/readme/pop-culture.png)
+
+- **Musical Instrument Page**
+
+  - The Musical Instruments option in the quiz app focuses on testing your knowledge of different musical instruments. This quiz may include questions about various types of instruments, their characteristics, how they're played, and their role in different genres of music. It's a great way to challenge your understanding of the world of instruments, from classical to modern.
+
+  ![Musical Instrument Page](assets/images/readme/instrument-page.png)
+
+- **Instrument Sound Page**  
+    
+  - The Instrument Sounds option in the quiz app challenges users to identify different musical instruments based on the sounds they produce. It includes audio clips of various instruments, and users must recognize and match the sound to the correct instrument. This quiz sharpens your ear for music and helps improve your ability to distinguish between different instrument sounds.
+
+   ![Instrument Sound Page](assets/images/readme/sound-page.png)
+
+- **Composers Page**    
+
+  - The Composers option in the quiz app tests your knowledge of famous composers and their works. It includes questions about well-known classical and modern composers, their musical styles, and their most iconic pieces. This quiz is perfect for those interested in learning more about the creators behind some of the greatest music in history.
+
+- **Team Page** 
+
+  - The Team page introduces the developers and creators behind the musical quiz app. It provides information about the team members, their roles, and contributions to the project. This page highlights the collaborative effort and expertise that went into building the app, giving users insight into the people who made the experience possible.
+
+   ![Team Page](assets/images/readme/collaborators.png)
+
+- **Navbar** 
+
+  -  The Navbar of the page provides easy navigation for users. It includes a logo for the musical quiz app and links to the Home and Team pages. The Home link is marked as the current page, while the Team link allows users to learn more about the creators of the app. The Navbar ensures quick access to key sections of the site, making it user-friendly and straightforward.   
+
+   ![Navbar Page](assets/images/readme/navbar.png)
+
+ - **Logo**
+
+   - The logo represent the symbol and favicon used on the website.
+
+   ![Navbar Page](assets/images/musiclogo.webp)
+ 
+  - **Footer**
+
+    - The Footer of the page credits the development team, named "The Empire Strikes Bach (Team 7)," and mentions that the app was created during a Code Institute Hackathon in celebration of Classical Music Month. It serves as a closing note, acknowledging the creators and the event behind the app's development.
+
+    ![Navbar Page](assets/images/readme/footer.png) 
+
+
+- **Images and Background**
+
+We have included the following images and background in the project:
+
+| Image | Screenshot |
+| --- | --- |
+| About Title | ![About Page Title Screenshot](assets/images/melomaniac-gold.webp) |
+| Title | ![Project Title Screenshot](assets/images/readme/intro.png) |
+| Ripped Sheet | ![Ripped Sheet Screenshot](assets/images/ripped-sheet.png) |
+| Tones | ![Tone Image Screenshot](assets/images/tone.png) |
+| Homepage Logo | ![Homepage Logo Screenshot](assets/images/musiclogo.webp) |
+| Page Background | ![Background Page Screenshot](assets/images/faded-background.webp)
+| Music | ![Music Image Screenshot](assets/images/music.png) |
 
 [Back to top](#Melomaniac)
+
 ## Tools & Technologies Used
 
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -110,7 +181,7 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
 [Back to top](#Melomaniac)
 
-### Collaborators
+## Collaborators
 
 We would like to extend our sincere gratitude to the talented team of developers who contributed their time, expertise, and creativity to the creation of our musical quiz app. This project would not have been possible without the collaborative efforts and dedication of each member. Their technical skills, innovative problem-solving, and passion for music and technology have been integral to the success of this app.
 
@@ -125,6 +196,8 @@ Thank you for your invaluable contributions and commitment to excellence.
 | Muhammed | Scrum Lead, Deployment, Project Setup, Epics, Agile | [Github](https://github.com/md-ash-dot/) |
 | Maria | Jack of all trades | [Github](https://github.com/maria-grozova) |
 | Kiree |  Jack of all trades | [Github](https://github.com/Swewi) |
+
+[Back to top](#Melomaniac)
 
 
 ### Testing
