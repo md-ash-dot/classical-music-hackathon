@@ -35,7 +35,7 @@ const popCultureQuestions = [
         question: "Which of these movies featured?",
         options: ["American Pie", "Mrs Doubtfire", "Cool Hand Luke", "The Shawshank Redemption"],
         answer: "The Shawshank Redemption",
-        audio: "assets/audio/Figaro"
+        audio: "assets/audio/Figaro.ogg"
     },
     {
         question: "Which of these movies featured?",
