@@ -1,46 +1,52 @@
 let currentQuestionIndex = 0;
 let score = 0;
+let highestScore = localStorage.getItem('highScore') ? Number(localStorage.getItem('highScore')) : 0;
 let selectedQuestions = [];
 let answerChecked = false; // To track if feedback is shown
+
+// Selectors for HTML elements
+const audioPlayer = document.getElementById('audio-player');
+const playBtn = document.getElementById("play-audio-btn");
+const optionsEl = document.getElementById('options');
+const questionEl = document.getElementById('question');
+const feedbackEl = document.getElementById('feedback');
+const scoreFeedbackEl = document.getElementById('score-feedback');
+const scoreEl = document.getElementById('final-score');
+const highScoreEl = document.getElementById('high-score');
+const nextBtn = document.getElementById('next-btn');
+const quizContainerEl = document.getElementById('quiz-container');
+const resultEl = document.getElementById('result');
 
 // Audio files for feedback
 const correctSound = new Audio('assets/audio/correctAnswer.mp3');
 const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');
 
-// Selectors for HTML elements
-const questionEl = document.getElementById('question');
-const optionsEl = document.getElementById('options');
-const nextBtn = document.getElementById('next-btn');
-const feedbackEl = document.getElementById('feedback');
-const scoreEl = document.getElementById('score');
-const scoreFeedbackEl = document.getElementById('score-feedback');
-const resultEl = document.getElementById('result');
-const quizContainerEl = document.getElementById('quiz-container');
-const pastScoresEl = document.getElementById('past-scores');
-
-// Function to shuffle an array using Fisher-Yates algorithm
-function shuffle(array) {
+// Function to shuffle an array (Fisher-Yates Shuffle)
+function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
 }
 
-// Function to select 10 random questions
+// Select 10 random questions and shuffle the options within the questions
 function selectRandomQuestions() {
-    const shuffledQuestions = shuffle(instrumentQuestions); // Shuffle all the questions
-    selectedQuestions = shuffledQuestions.slice(0, 10); // Take the first 10
+    shuffleArray(soundQuestions); // Shuffle the entire soundQuestions array
+    selectedQuestions = soundQuestions.slice(0, 10); // Limit to first 10 questions
 }
 
-// Function to load the current question
+// Load a question
 function loadQuestion() {
+    feedbackEl.innerText = ''; // Hide feedback
     answerChecked = false; // Reset feedback check
-    feedbackEl.innerHTML = ''; // Clear any previous feedback
-    const currentQuestion = selectedQuestions[currentQuestionIndex];
 
+    // Load current question
+    const currentQuestion = selectedQuestions[currentQuestionIndex];
     // Display the question
     questionEl.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
+    
+    // Hide and reset the audio player
+    audioPlayer.src = currentQuestion.audio;
     
     // Display the options
     optionsEl.innerHTML = ''; // Clear previous options
@@ -58,7 +64,7 @@ function loadQuestion() {
         // Create label element
         const label = document.createElement('label');
         label.setAttribute('for', optionId);
-        label.classList.add('option-button');
+        label.classList.add('game-start');
         label.innerText = option;
 
         // Append input and label to the options container
@@ -73,6 +79,11 @@ function loadQuestion() {
 // Function to enable the "Next" button once an option is selected
 function enableNext() {
     nextBtn.disabled = false;
+}
+
+// Play audio function triggered by user
+function playAudio() {
+    audioPlayer.play().catch(error => console.error('Audio play failed: ', error));
 }
 
 // Function to check the answer and show feedback
@@ -121,27 +132,18 @@ function nextQuestion() {
     }
 }
 
-// Store the highest score in localStorage if the current score is greater
-function storeHighestScore() {
-    const highestScore = localStorage.getItem('InstrumentHighestScore') || 0;
-
-    if (score > highestScore) {
-        localStorage.setItem('InstrumentHighestScore', score);
-    }
-}
-
 // Display a result feedback based on the amount of correct answers
 function displayScoreFeedback(score) {
     let message;
     
     if (score === 0) {
-        message = "Better luck next time! Keep practicing.";
+        message = "Oops! That one’s a blooper. Better luck next time!";
     } else if (score <= 4) {
-        message = "It might be too early to sign up for an orchestra.";
+        message = "Missed the beat, but the show goes on!";
     } else if (score <= 7) {
-        message = "Maybe join a garage band for some fun?";
+        message = "Close, but that score didn't quite hit the right note!";
     } else if (score <= 9) {
-        message = "You're ready for a jam session! Keep honing those skills.";
+        message = "Almost had it! The silver screen awaits your comeback!";
     } else {
         message = "WOW! You're a melomaniac!";
     }
@@ -149,22 +151,33 @@ function displayScoreFeedback(score) {
     scoreFeedbackEl.innerText = message; // Display the message in the HTML
 }
 
-// Function to end the quiz and display the score
+// Store the highest score in localStorage if the current score is greater
+function storeHighestScore() {
+    const highestScore = localStorage.getItem('SoundHighestScore') || 0;
+
+    if (score > highestScore) {
+        localStorage.setItem('SoundHighestScore', score);
+    }
+}
+
+// End of quiz: Display final score and high score
 function endQuiz() {
-    storeHighestScore(); // Store the highest score if applicable
+    // Hide quiz interface
     quizContainerEl.style.display = 'none'; // Hide the quiz container
-    resultEl.style.display = 'block'; // Show the result section
+
+    // Update and display high score
+    highestScore = localStorage.getItem('SoundHighestScore');
+    highestScore = highestScore ? highestScore : 0;
 
     // Display final score and the highest score
-    highestScore = localStorage.getItem('InstrumentHighestScore');
-    highestScore = highestScore ? highestScore : 0; // to avoid displaying null
-    scoreEl.innerHTML = `${score} out of ${selectedQuestions.length}`;
-    pastScoresEl.innerHTML = `Highest Score: ${highestScore}`;
+    scoreEl.innerText = `Your final score: ${score} out of ${selectedQuestions.length}`;
+    highScoreEl.innerText = `Highest score: ${highestScore}`;
+    resultEl.style.display = 'block';
     displayScoreFeedback(score);
 }
 
-// Start the quiz: Select 10 random questions and load the first question
-// Initialize the quiz
-selectRandomQuestions();
-loadQuestion();
-nextBtn.addEventListener('click', nextQuestion);
+// Start the quiz
+window.onload = function() {
+    selectRandomQuestions(); // Select random questions on page load
+    loadQuestion();
+}
