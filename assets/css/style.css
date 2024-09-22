@@ -343,6 +343,7 @@ footer {
     width: 100%;
     gap: 3rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .next-btn {
@@ -391,9 +392,6 @@ footer {
     padding: 0.5rem;
     width: 3rem;
     height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     box-shadow: 0 0 20px #fff;
     transition: background-color 0.2s ease, transform 0.2s ease;
@@ -402,6 +400,19 @@ footer {
 .hint-btn:hover {
     background-color: #333399;
     transform: scale(1.1);
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 95%;
+    text-align: center;
+}
+
+p.hint-text {
+    padding: 0.5rem;
 }
 
 /* When the radio button is checked, change the label's background and text color */

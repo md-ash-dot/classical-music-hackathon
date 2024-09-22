@@ -88,7 +88,7 @@ function enableNext() {
 function showHint() {
     if (!hintUsed) {
         const currentQuestion = selectedQuestions[currentQuestionIndex];
-        hintEl.innerHTML = `<p><strong>Hint:</strong> ${currentQuestion.hint}</p>`;
+        hintEl.innerHTML = `<p class="hint-text"><strong>Hint:</strong> ${currentQuestion.hint}</p>`;
         hintUsed = true;
         hintBtn.style.display = 'none';
     }
