@@ -58,7 +58,7 @@ function loadQuestion() {
         // Create label element
         const label = document.createElement('label');
         label.setAttribute('for', optionId);
-        label.classList.add('game-start');
+        label.classList.add('option-button');
         label.innerText = option;
 
         // Append input and label to the options container
