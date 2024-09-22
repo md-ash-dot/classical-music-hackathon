@@ -450,7 +450,8 @@ footer {
 }
 
 .team-card h3 {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -511,6 +512,12 @@ footer {
     
     .nav-item a {
         margin-left: 0;
+        font-size: medium;
+    }
+
+    .logo {
+        height: 2rem;
+        margin-right: 3rem;
     }
     
     .welcome-image {
@@ -519,6 +526,10 @@ footer {
 
     .btn-game {
         margin-top: 1rem;
+    }
+
+    footer {
+        font-size: small;
     }
 }
 

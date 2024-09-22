@@ -33,7 +33,7 @@ const soundQuestions = [
     },
     {
         question: "Identify the instrument.",
-        options: ["FLute", "Pan Flute", "piccolo", "Bass Drum"],
+        options: ["Flute", "Pan Flute", "Piccolo", "Bass Drum"],
         answer: "Pan Flute",
         audio: "assets/audio/pan-flute.mp3"
     },
