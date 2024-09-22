@@ -413,7 +413,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1238px;
+    max-width: 1248px;
     margin: 0 auto 120px;
 }
 
@@ -423,6 +423,9 @@ footer {
     align-content: center;
     padding: 0 2% 20px;
     color: #D8A409;
+    border: solid 1px #EEE5E9;
+    border-radius: 10%;
+    margin: 5px;
 }
 
 .team-card img {
@@ -431,6 +434,7 @@ footer {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .team-card h3 {
@@ -441,6 +445,19 @@ footer {
 .team-card a {
     color: #EEE5E9;
     font-family: "Noto Sans", sans-serif;
+}
+
+.team-card a:hover {
+    font-weight: 600;
+}
+
+.team-card i {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.team-card iframe {
+    margin-top: 10px;
 }
 
 /* == Media Queries == */
