@@ -416,6 +416,12 @@ footer {
     margin: 1rem 0;
 }
 
+.mute-btn {
+    background-color: #C0C0C0;
+    border-radius: 30%;
+    padding: 3px;
+}
+
 /* == Restart Quiz Button == */
 
 /* Team Page */
