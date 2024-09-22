@@ -50,7 +50,7 @@ header {
     outline-offset: 2px;
 }
 
-.active {
+.nav-item a.active {
     color: #d8a408;
 }
 
