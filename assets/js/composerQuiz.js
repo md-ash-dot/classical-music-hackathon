@@ -2,6 +2,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 let selectedQuestions = [];
 let answerChecked = false; // To track if feedback is shown
+let hintUsed = false;
 
 // Audio files for feedback
 const correctSound = new Audio('assets/audio/correctAnswer.mp3');
@@ -17,6 +18,8 @@ const scoreFeedbackEl = document.getElementById('score-feedback');
 const resultEl = document.getElementById('result');
 const quizContainerEl = document.getElementById('quiz-container');
 const pastScoresEl = document.getElementById('past-scores');
+const hintBtn = document.getElementById('hint-btn');
+const hintEl = document.getElementById('hint');
 
 // Function to shuffle an array using Fisher-Yates algorithm
 function shuffle(array) {
@@ -36,12 +39,15 @@ function selectRandomQuestions() {
 // Function to load the current question
 function loadQuestion() {
     answerChecked = false; // Reset feedback check
+    hintUsed = false; // Reset hint
     feedbackEl.innerHTML = ''; // Clear any previous feedback
+    hintEl.innerHTML = '';
+    hintBtn.style.display = 'inline-block';
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
     // Display the question
     questionEl.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
-
+    
     // Display the options
     optionsEl.innerHTML = ''; // Clear previous options
     currentQuestion.options.forEach((option, index) => {
@@ -75,11 +81,21 @@ function enableNext() {
     nextBtn.disabled = false;
 }
 
+// Function to to display the hint when the button is clicked.
+function showHint() {
+    if (!hintUsed) {
+        const currentQuestion = selectedQuestions[currentQuestionIndex];
+        hintEl.innerHTML = `<p><strong>Hint:</strong> ${currentQuestion.hint}</p>`;
+        hintUsed = true;
+        hintBtn.style.display = 'none';
+    }
+}
+
 // Function to check the answer and show feedback
 function checkAnswer() {
     if (answerChecked) return; // Prevent checking the answer again
     answerChecked = true; // Mark the answer as checked
-
+    
     const selectedOption = document.querySelector('input[name="quiz-option"]:checked').value;
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
@@ -133,7 +149,7 @@ function storeHighestScore() {
 // Display a result feedback based on the amount of correct answers
 function displayScoreFeedback(score) {
     let message;
-
+    
     if (score === 0) {
         message = "Don't worry, even Mozart had to start somewhere!";
     } else if (score <= 4) {
@@ -145,7 +161,7 @@ function displayScoreFeedback(score) {
     } else {
         message = "Maestro! Your knowledge of composers is truly legendary! You're a melomaniac!";
     }
-
+    
     scoreFeedbackEl.innerText = message; // Display the message in the HTML
 }
 
@@ -167,3 +183,4 @@ function endQuiz() {
 selectRandomQuestions();
 loadQuestion();
 nextBtn.addEventListener('click', nextQuestion);
+hintBtn.addEventListener('click', showHint); 
