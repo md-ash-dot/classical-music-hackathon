@@ -346,6 +346,7 @@ footer {
     margin-top: 1rem;
     box-shadow: 0 0 15px #ffd900f8;
     border-radius: 20px;
+    transition: box-shadow 0.2s ease text-shadow 0.2s ease;
 }
 
 .next-btn:hover {
