@@ -245,13 +245,24 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 0.5rem;
     color: #fff;
 }
 
 .quiz-container h1 {
-    margin: 20px auto;
+    font-family: "Lugrasimo", serif;
+    font-size: xx-large;
+    letter-spacing: 1.5px;
+    margin: 0.5rem auto;
     background: none;
+    color: #c0c0c0;
+}
+
+.quiz-container p {
+    font-family: "Noto sans", sans-serif;
+    letter-spacing: 1.5px;
+    padding-bottom: 0.5rem;
+    color: #c0c0c0;
 }
 
 .options-container {
@@ -267,12 +278,13 @@ footer {
 }
 
 .play-audio-btn {
-    color: #c0c0c0;
+    color: #a7a5a5;
     background-color: #FFD700;
     font-size: 3rem;
     border: none;
     border-radius: 50%;
     margin: 1rem;
+    box-shadow: 0 0 12px #cce481;
     transition: transform 0.2s ease box-shadow 0.2s ease text-shadow 0.2s ease;
 }
 
@@ -334,6 +346,7 @@ footer {
     margin-top: 1rem;
     box-shadow: 0 0 15px #ffd900f8;
     border-radius: 20px;
+    transition: box-shadow 0.2s ease text-shadow 0.2s ease;
 }
 
 .next-btn:hover {
@@ -352,8 +365,8 @@ footer {
 
 /* When the radio button is checked, change the label's background and text color */
 .options-container input[type="radio"]:checked + label {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #11147a;
+    color: #d6d5d5;
 }
 
 /* Add a hover effect to the labels */
@@ -377,13 +390,13 @@ footer {
 /* Feedback message */
 .feedback {
     min-height: 2rem; /* Reserve space for feedback, but don't let it grow */
-    margin: 1rem 0;
     font-size: 1.2rem;
+    font-family: "Noto sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 2.5rem;
+    height: 2rem;
 }
 
 /* Replay Options*/
@@ -413,7 +426,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1238px;
+    max-width: 1248px;
     margin: 0 auto 120px;
 }
 
@@ -423,6 +436,9 @@ footer {
     align-content: center;
     padding: 0 2% 20px;
     color: #D8A409;
+    border: solid 1px #EEE5E9;
+    border-radius: 10%;
+    margin: 5px;
 }
 
 .team-card img {
@@ -431,6 +447,7 @@ footer {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .team-card h3 {
@@ -443,9 +460,41 @@ footer {
     font-family: "Noto Sans", sans-serif;
 }
 
+.team-card a:hover {
+    font-weight: 600;
+}
+
+.team-card i {
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+.team-card iframe {
+    margin-top: 10px;
+}
+
 /* == Media Queries == */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+    .quiz-container h1 {
+        font-size: large;
+        margin: 0 auto;
+    }
+
+    .quiz-container p {
+        padding-bottom: 0;
+        margin: 0 0.7rem;
+    }
+
+    .next-btn {
+        margin-top: 0.2rem;
+    }
+
+    .option-button {
+        width: 21rem;
+        height: 3.2rem;
+    }
+
     .nav-bar {
         width: 80%;
         padding-top: 0.2rem;
