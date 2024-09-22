@@ -273,13 +273,14 @@ footer {
     border: none;
     border-radius: 50%;
     margin: 1rem;
-    transition: transform 0.2s ease box-shadow 0.2s ease;
+    transition: transform 0.2s ease box-shadow 0.2s ease text-shadow 0.2s ease;
 }
 
 .play-audio-btn:hover {
     transform: scale(1.10);
     box-shadow: 0 0 5px 2px #ffffff;
     background-color: #c0c0c0;
+    text-shadow: 0 0 1px #fff;
     color: #11147a;
 }
 
