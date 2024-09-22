@@ -473,6 +473,26 @@ footer {
     margin-top: 10px;
 }
 
+/* == 404 Page == */
+.msg-container {
+    align-items: center;
+    align-content: center;
+}
+
+.msg-container a {
+    margin-top: 5rem;
+}
+
+.msg-container h1{
+    color: white;
+    background: transparent;
+    font-family: "Lugrasimo", serif;
+    font-size: medium;
+    margin-top: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* == Media Queries == */
 @media screen and (max-width: 400px) {
     footer {
@@ -542,4 +562,20 @@ footer {
     .btn-game {
         margin-top: 1rem;
     }
+
+    .nav-item a {
+        margin-left: 0;
+        font-size: medium;
+    }
+
+    .logo {
+        height: 2rem;
+        margin-right: 3rem;
+    }
+
+    footer {
+        font-size: small;
+    }
+
+
 }
