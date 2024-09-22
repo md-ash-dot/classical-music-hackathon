@@ -16,6 +16,9 @@ h3 {
     font-family: "Noto Sans", sans-serif;
 }
 
+.hidden {
+    display: none;
+}
 /* == Header == */
 
 header {
@@ -50,7 +53,7 @@ header {
     outline-offset: 2px;
 }
 
-.active {
+.nav-item a.active {
     color: #d8a408;
 }
 
@@ -117,6 +120,11 @@ main {
     right: 0%;
 }
 
+.description {
+    text-align: center;
+    color: #d8a408;
+}
+
 /* == Footer == */
 
 footer {
@@ -133,6 +141,40 @@ footer {
     padding-top: 0.5rem;
     margin-top: 3rem;
     box-shadow: 0 -5px 10px #c0c0c070;
+}
+
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Close button (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 /* == Home & Quiz == */
@@ -294,7 +336,7 @@ footer {
     background-color: #FFD700;
     font-size: 3rem;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     margin: 1rem;
     box-shadow: 0 0 12px #cce481;
     transition: transform 0.2s ease box-shadow 0.2s ease text-shadow 0.2s ease;
@@ -302,10 +344,22 @@ footer {
 
 .play-audio-btn:hover {
     transform: scale(1.10);
-    box-shadow: 0 0 5px 2px #ffffff;
+    box-shadow: 0 -1px 5px 2px #ffffff;
     background-color: #c0c0c0;
     text-shadow: 0 0 1px #fff;
     color: #11147a;
+}
+
+.play-text {
+    font-size: x-large;
+    font-family: "Noto sans", sans-serif;
+    color: #c0c0c0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px -3px 5px #FFD700;
 }
 
 /* Hide the default radio button */
@@ -343,6 +397,7 @@ footer {
     width: 100%;
     gap: 3rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .next-btn {
@@ -391,9 +446,6 @@ footer {
     padding: 0.5rem;
     width: 3rem;
     height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     box-shadow: 0 0 20px #fff;
     transition: background-color 0.2s ease, transform 0.2s ease;
@@ -402,6 +454,19 @@ footer {
 .hint-btn:hover {
     background-color: #333399;
     transform: scale(1.1);
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 95%;
+    text-align: center;
+}
+
+p.hint-text {
+    padding: 0.5rem;
 }
 
 /* When the radio button is checked, change the label's background and text color */
@@ -449,15 +514,23 @@ footer {
     margin: 1rem 0;
 }
 
-<<<<<<< HEAD
-=======
 .mute-btn {
     background-color: #C0C0C0;
     border-radius: 30%;
     padding: 3px;
 }
 
->>>>>>> ed0b9d4c58b0c59ab727b48a82e5ad3600f2b673
+/* Progress bar */
+.progress-bar {
+    text-align: center;
+    color: #a7a5a5;
+    padding: 1em;
+}
+
+.current-q {
+    color: #d8a408;
+}
+
 /* Team Page */
 .team-intro {
     max-width: 800px;

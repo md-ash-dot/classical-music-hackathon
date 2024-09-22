@@ -77,6 +77,10 @@ function loadQuestion() {
 
     // Disable the "Next" button until an option is selected
     nextBtn.disabled = true;
+
+    // Display the progress bar
+    let progressBar = document.getElementsByClassName("progress");
+    progressBar[currentQuestionIndex].classList.add("current-q");
 }
 
 // Function to enable the "Next" button once an option is selected
@@ -88,7 +92,7 @@ function enableNext() {
 function showHint() {
     if (!hintUsed) {
         const currentQuestion = selectedQuestions[currentQuestionIndex];
-        hintEl.innerHTML = `<p><strong>Hint:</strong> ${currentQuestion.hint}</p>`;
+        hintEl.innerHTML = `<p class="hint-text"><strong>Hint:</strong> ${currentQuestion.hint}</p>`;
         hintUsed = true;
         hintBtn.style.display = 'none';
     }

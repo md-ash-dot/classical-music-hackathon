@@ -32,8 +32,8 @@
         <div id="quiz-container" class="quiz-container ">
             <h1>Can you guess the instrument?</h1>
             <p id="question"></p>
-            <button id="play-audio-btn" class="play-audio" aria-label="Play audio" onclick="playAudio()"><i
-                class="fa-solid fa-circle-play play-audio-btn"></i></button>
+            <button id="play-audio-btn" class="play-audio play-text" aria-label="Play audio" onclick="playAudio()">Click <i
+                class="fa-solid fa-circle-play play-audio-btn"></i> Here</button>
             <audio id="audio-player" controls style="display:none;"></audio>
             <div id="options" class="options-container">
                 <!-- Options will be injected here -->
@@ -50,9 +50,22 @@
                 <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
             </div>
         </div>
+        <!-- Progress bar -->
+        <div class="progress-bar">
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+            <i class="fa-solid fa-music progress" aria-hidden="true"></i>
+        </div>
         <button id="mute-btn" class="mute-btn"><i class="fa-solid fa-volume-xmark"></i><br>Sound Off</button>
     </main>
-    <footer>
+    <footer class="hidden">
         Created by The Empire Strikes Bach (Team 7) - Code Institute Hackathon, Classical Music Month
     </footer>
 
