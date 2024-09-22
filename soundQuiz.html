@@ -32,7 +32,7 @@
         <div id="quiz-container" class="quiz-container ">
             <h1>Sound Quiz Game</h1>
             <p id="question"></p>
-            <button id="play-audio-btn" class="play-audio" onclick="playAudio()"><i
+            <button id="play-audio-btn" class="play-audio" aria-label="Play audio" onclick="playAudio()"><i
                 class="fa-solid fa-circle-play play-audio-btn"></i></button>
             <audio id="audio-player" controls style="display:none;"></audio>
             <div id="options" class="options-container">
@@ -50,6 +50,7 @@
                 <a href="index.html" class="game-start" aria-label="button to go to the home page">Select a different game</a>
             </div>
         </div>
+        <button id="mute-btn" class="mute-btn"><i class="fa-solid fa-volume-xmark"></i><br>Sound Off</button>
     </main>
     <footer>
         Created by The Empire Strikes Bach (Team 7) - Code Institute Hackathon, Classical Music Month
