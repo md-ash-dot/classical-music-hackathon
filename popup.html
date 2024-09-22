@@ -19,18 +19,6 @@
 </head>
 
 <body>
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-body"></p>
-            <button id="start-game">Play</button>
-        </div>
-    </div>
-
-    <!-- Page header -->
     <header>
         <div class="nav-bar">
             <img id="logo" class="logo" src="assets/images/musiclogo.webp" alt="Logo for the game">
@@ -46,31 +34,21 @@
             <img class="welcome-image" src="assets/images/melomaniac-gold.webp" alt="text welcome to music trivia">
         </div>
         <div class="btn-game">
-            <button id="start-game-pop" class="game-start openModalBtn"
-                data-title="Pop Culture Quiz" data-body="Test your knowledge of classical music featured in films! Click the 'Play' button 
-                to listen to a classical piece, then guess which movie it belongs to from the provided options. 
-                Score points for each correct answer and see how well you know the intersection of cinema and classical music!" data-url="popCultureQuiz.html"
+            <a href="popCultureQuiz.html" id="start-game-pop" class="game-start"
                 aria-label="button to start pop culture game">
                 <img class="game-icon-start" src="assets/images/video-camera.png" alt="Image of film camera as an icon">
-                <span class="game-text">Pop Culture</span></button>
-            <button id="start-game-instrument" class="game-start openModalBtn"
-                data-title="Musical Instrument Quiz" data-body="Put your knowledge of musical instruments to the test! Choose the correct instrument from four options based on the description provided. 
-                Think you know your strings from your brass? Let’s find out!" data-url="instrumentQuiz.html"
+                <span class="game-text">Pop Culture</span></a>
+            <a href="instrumentQuiz.html" id="start-game-instrument" class="game-start"
                 aria-label="button to start instrument game">
                 <img class="game-icon-start" src="assets/images/music.png" alt="Image of guitar as an icon">
-                <span class="game-text">Instruments</span></button>
-            <button id="start-game-sounds" class="game-start openModalBtn"
-                data-title="Instrument Sound Quiz" data-body="Put your ears to the test! Listen carefully to the sound of a musical instrument, 
-                then select the correct option from the four choices provided. Tune in and see how many you can guess!" data-url="soundQuiz.html"
+                <span class="game-text">Instruments</span></a>
+            <a href="soundQuiz.html" id="start-game-sounds" class="game-start"
                 aria-label="button to start sound game">
                 <img class="game-icon-start" src="assets/images/tone.png" alt="Image of music stave as an icon">
-                <span class="game-text">Instrument Sounds</span></button>
-            <button id="start-game-composers" class="game-start openModalBtn" 
-                data-title="Composer Quiz" data-body="Discover the great composers of music! Answer questions about famous composers and their works. 
-                If you’re unsure, use the hint option for a clue. Test your knowledge and see if you can name them all!" data-url="composerQuiz.html"
-                aria-label="button to start composers game">
+                <span class="game-text">Instrument Sounds</span></a>
+            <a href="composerQuiz.html" id="start-game-composers" class="game-start" aria-label="button to start composers game">
                 <img class="game-icon-start" src="assets/images/music-stand.png" alt="Image of music stand as an icon">
-                <span class="game-text">Composers</span></button>                
+                <span class="game-text">Composers</span></a>                
         </div>
     </main>
     <footer>
@@ -78,7 +56,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/index.js"></script>
     <script type="module" src="assets/js/instrumentQuestions.js"></script>
     <script type="module" src="assets/js/popCultureQuestions.js"></script>
     <script type="module" src="assets/js/soundQuestions.js"></script>
