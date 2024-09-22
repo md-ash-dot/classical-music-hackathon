@@ -274,9 +274,10 @@ footer {
     background: #c0c0c0;
     color: black;
     border: 1px solid #000000;
-    font-family: "Lugrasimo", serif;
+    font-family: "noto sans", sans-serif;
     font-size: large;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     padding: 0.5rem;
     width: 12rem;
     height: 2.5rem;
@@ -286,7 +287,7 @@ footer {
     overflow: hidden;
     cursor: pointer;
     margin-top: 1rem;
-    box-shadow: #FFD700;
+    box-shadow: 0 0 15px #ffd900f8;
     border-radius: 20px;
 }
 
@@ -387,12 +388,7 @@ footer {
 }
 
 /* == Media Queries == */
-@media screen and (max-width: 600px) {
-    .quiz-container { 
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
+@media screen and (max-width: 767px)
 
 @media screen and (max-width: 768px) {
     .nav-bar {
