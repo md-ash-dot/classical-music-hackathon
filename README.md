@@ -121,6 +121,9 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
   - The Composers option in the quiz app tests your knowledge of famous composers and their works. It includes questions about well-known classical and modern composers, their musical styles, and their most iconic pieces. This quiz is perfect for those interested in learning more about the creators behind some of the greatest music in history.
 
+  
+   ![Composer Sound Page](assets/images/readme/composers.png)
+
 - **Team Page** 
 
   - The Team page introduces the developers and creators behind the musical quiz app. It provides information about the team members, their roles, and contributions to the project. This page highlights the collaborative effort and expertise that went into building the app, giving users insight into the people who made the experience possible.
