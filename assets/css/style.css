@@ -503,6 +503,12 @@ footer {
     
     .nav-item a {
         margin-left: 0;
+        font-size: medium;
+    }
+
+    .logo {
+        height: 2rem;
+        margin-right: 3rem;
     }
     
     .welcome-image {
