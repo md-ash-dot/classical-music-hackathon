@@ -3,10 +3,12 @@ let score = 0;
 let selectedQuestions = [];
 let answerChecked = false; // To track if feedback is shown
 let hintUsed = false;
+let isMuted = false;
 
 // Audio files for feedback
 const correctSound = new Audio('assets/audio/correctAnswer.mp3');
 const incorrectSound = new Audio('assets/audio/wrongAnswer.mp3');
+const storedMuteState = localStorage.getItem('isMuted');
 
 // Selectors for HTML elements
 const questionEl = document.getElementById('question');
@@ -20,6 +22,7 @@ const quizContainerEl = document.getElementById('quiz-container');
 const pastScoresEl = document.getElementById('past-scores');
 const hintBtn = document.getElementById('hint-btn');
 const hintEl = document.getElementById('hint');
+const muteBtn = document.getElementById('mute-btn');
 
 // Function to shuffle an array using Fisher-Yates algorithm
 function shuffle(array) {
@@ -103,10 +106,14 @@ function checkAnswer() {
     if (selectedOption === currentQuestion.answer) {
         score++;
         feedbackEl.innerHTML = `<p style="color: green;">Correct! Well done.</p>`;
-        correctSound.play(); // Play correct answer sound
+        if (!isMuted) {
+            correctSound.play(); // Play correct answer sound
+        }
     } else {
         feedbackEl.innerHTML = `<p style="color: red;">Wrong! The correct answer was: ${currentQuestion.answer}</p>`;
-        incorrectSound.play(); // Play incorrect answer sound
+        if (!isMuted) {
+            incorrectSound.play(); // Play incorrect answer sound
+        }
     }
 
     // Display the feedback
@@ -178,9 +185,34 @@ function endQuiz() {
     displayScoreFeedback(score);
 }
 
+// Toggle function to turn the audio on and off
+function toggleMute() {
+    if (isMuted) {
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-off"></i><br>Sound On'
+    } else { 
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i><br>Sound Off'
+    }
+}
+
+// Check localStorage for existing mute state
+function checkMuteState() {
+    if (storedMuteState !== null) {
+        isMuted = JSON.parse(storedMuteState); // Convert string to boolean
+    }
+    toggleMute(); // Update the sound and button based on the mute state
+}
+
 // Start the quiz: Select 10 random questions and load the first question
 // Initialize the quiz
 selectRandomQuestions();
 loadQuestion();
+checkMuteState();
+
 nextBtn.addEventListener('click', nextQuestion);
-hintBtn.addEventListener('click', showHint); 
+hintBtn.addEventListener('click', showHint);
+muteBtn.addEventListener('click', () => {
+    isMuted = !isMuted;
+    localStorage.setItem('isMuted', isMuted); // Store mute state in localStorage
+    toggleMute();
+});
+// muteBtn.addEventListener('click', toggleMute);
