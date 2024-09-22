@@ -273,11 +273,14 @@ footer {
     border: none;
     border-radius: 50%;
     margin: 1rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease box-shadow 0.2s ease;
 }
 
 .play-audio-btn:hover {
-    transition: transform 0.2s ease
+    transform: scale(1.10);
+    box-shadow: 0 0 5px 2px #ffffff;
+    background-color: #c0c0c0;
+    color: #11147a;
 }
 
 /* Hide the default radio button */
@@ -404,7 +407,6 @@ footer {
 }
 
 /* == Media Queries == */
-@media screen and (max-width: 767px)
 
 @media screen and (max-width: 768px) {
     .nav-bar {
