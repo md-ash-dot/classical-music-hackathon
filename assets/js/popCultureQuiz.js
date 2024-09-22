@@ -29,10 +29,10 @@ function shuffleArray(array) {
     }
 }
 
-// Select 3 random questions and shuffle the options within the questions
+// Select 10 random questions and shuffle the options within the questions
 function selectRandomQuestions() {
     shuffleArray(popCultureQuestions); // Shuffle the entire popCultureQuestions array
-    selectedQuestions = popCultureQuestions.slice(0, 3); // Limit to first 3 questions
+    selectedQuestions = popCultureQuestions.slice(0, 10); // Limit to first 10 questions
 }
 
 // Load a question
@@ -132,6 +132,15 @@ function nextQuestion() {
     }
 }
 
+// Store the highest score in localStorage if the current score is greater
+function storeHighestScore() {
+    const highestScore = localStorage.getItem('PopHighestScore') || 0;
+
+    if (score > highestScore) {
+        localStorage.setItem('PopHighestScore', score);
+    }
+}
+
 // Display a result feedback based on the amount of correct answers
 function displayScoreFeedback(score) {
     let message;
@@ -157,11 +166,8 @@ function endQuiz() {
     quizContainerEl.style.display = 'none'; // Hide the quiz container
 
     // Update and display high score
-    const highestScore = localStorage.getItem('highestScore');
-    if (score > highestScore) {
-        highestScore = score;
-        localStorage.setItem('highScore', highestScore);
-    }
+    highestScore = localStorage.getItem('PopHighestScore');
+    highestScore = highestScore ? highestScore : 0;
 
     // Display final score and the highest score
     scoreEl.innerText = `Your final score: ${score} out of ${selectedQuestions.length}`;
