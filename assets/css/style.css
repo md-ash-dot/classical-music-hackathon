@@ -9,7 +9,10 @@
     box-sizing: border-box;
 }
 
-p, h1, h2, h3 {
+p,
+h1,
+h2,
+h3 {
     font-family: "Noto Sans", sans-serif;
 }
 
@@ -65,7 +68,8 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     background:
         url('../images/faded-background.webp') center center / cover no-repeat,
-        rgba(0, 0, 0, 0.6); /* Solid color underlay */
+        rgba(0, 0, 0, 0.6);
+    /* Solid color underlay */
     min-height: 100vh;
     position: relative;
     font-size: 18px;
@@ -86,7 +90,8 @@ h2 {
 }
 
 a {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
+    /* Remove underline */
 }
 
 main {
@@ -97,7 +102,7 @@ main {
 .intro-text {
     background: #000000;
     color: white;
-    font-size:  0.75em;
+    font-size: 0.75em;
 }
 
 #container {
@@ -154,7 +159,7 @@ footer {
 /* == Game Area == */
 
 #game-area {
-    color :#fff;
+    color: #fff;
     align-content: center;
     flex-direction: column;
     margin: 1.5rem auto;
@@ -173,13 +178,13 @@ footer {
 
 .intro-text {
     background-color: #000000;
-    font-family:"Noto sans" sans-serif;
+    font-family: "Noto sans"sans-serif;
 }
 
 /* == Start Game Button & 404 Button == */
 
 .btn-game {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -262,6 +267,10 @@ footer {
     letter-spacing: 1.5px;
     padding-bottom: 0.5rem;
     color: #c0c0c0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .options-container {
@@ -302,24 +311,24 @@ footer {
 
 /*Option Buttons*/
 .option-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #FFD700;
-        color: #11147a;
-        border: none;
-        border-radius: 20px;
-        padding: 0.6rem;
-        width: 30rem;
-        height: 3rem;
-        margin-bottom: 1.2rem;
-        font-family: "Lugrasimo", serif;
-        font-size: large;
-        font-weight: 600;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        outline: none;
-        cursor: pointer;
-        position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFD700;
+    color: #11147a;
+    border: none;
+    border-radius: 20px;
+    padding: 0.6rem;
+    width: 30rem;
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    font-family: "Lugrasimo", serif;
+    font-size: large;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    outline: none;
+    cursor: pointer;
+    position: relative;
 }
 
 /* Next button styling (matching game-start) */
@@ -363,7 +372,7 @@ footer {
 }
 
 /* When the radio button is checked, change the label's background and text color */
-.options-container input[type="radio"]:checked + label {
+.options-container input[type="radio"]:checked+label {
     background-color: #11147a;
     color: #d6d5d5;
 }
@@ -388,7 +397,8 @@ footer {
 
 /* Feedback message */
 .feedback {
-    min-height: 2rem; /* Reserve space for feedback, but don't let it grow */
+    min-height: 2rem;
+    /* Reserve space for feedback, but don't let it grow */
     font-size: 1.2rem;
     font-family: "Noto sans", sans-serif;
     display: flex;
@@ -483,7 +493,7 @@ footer {
     margin-top: 5rem;
 }
 
-.msg-container h1{
+.msg-container h1 {
     color: white;
     background: transparent;
     font-family: "Lugrasimo", serif;
@@ -503,6 +513,14 @@ footer {
     .next-btn {
         margin-bottom: 2rem;
     }
+
+    .nav-item a {
+        font-size: small;
+    }
+
+    footer {
+        font-size: small;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -514,6 +532,11 @@ footer {
     .quiz-container p {
         padding-bottom: 0;
         margin: 0 0.7rem;
+        width: 60%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .next-btn {
@@ -529,7 +552,7 @@ footer {
         width: 80%;
         padding-top: 0.2rem;
     }
-    
+
     .nav-item a {
         margin-left: 0;
         font-size: medium;
@@ -539,7 +562,7 @@ footer {
         height: 2rem;
         margin-right: 3rem;
     }
-    
+
     .welcome-image {
         margin-top: 0;
     }
@@ -549,33 +572,17 @@ footer {
     }
 
     footer {
-        font-size: small;
+        font-size: medium;
     }
 }
 
 @media screen and (min-width: 1020px) {
     .welcome-image {
-        width: 50%;
-        padding: 1rem;
+        width: 60%;
+        padding: 1.5rem;
     }
 
     .btn-game {
         margin-top: 1rem;
     }
-
-    .nav-item a {
-        margin-left: 0;
-        font-size: medium;
-    }
-
-    .logo {
-        height: 2rem;
-        margin-right: 3rem;
-    }
-
-    footer {
-        font-size: small;
-    }
-
-
 }
