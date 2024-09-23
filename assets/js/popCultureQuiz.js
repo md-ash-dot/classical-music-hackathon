@@ -191,9 +191,9 @@ function endQuiz() {
 // Toggle function to turn the audio on and off
 function toggleMute() {
     if (isMuted) {
-        muteBtn.innerHTML = '<i class="fa-solid fa-volume-off"></i><br>Sound On'
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-off"></i>'
     } else { 
-        muteBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i><br>Sound Off'
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>'
     }
 }
 

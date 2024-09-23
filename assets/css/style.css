@@ -270,6 +270,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+}
+
+#start-game-pop {
+    margin: 1.2rem;
 }
 
 .game-start {
@@ -550,10 +555,22 @@ p.hint-text {
     margin: 1rem 0;
 }
 
+/* Mute button */
 .mute-btn {
     background-color: #C0C0C0;
     border-radius: 30%;
-    padding: 3px;
+    position: absolute;  /* or use fixed if you want the button to stay in place when scrolling */
+    right: 20px; /* Adjust this value to set how far from the right edge */
+    top: 20px;   /* Adjust this value for the vertical placement */
+    width: 30px; /* Set a fixed width for the button */
+    height: 30px; /* Set a fixed height for the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mute-btn i {
+    font-size: 15px;
 }
 
 /* Progress bar */
@@ -657,6 +674,7 @@ p.hint-text {
     footer {
         position: relative;
         margin: 0;
+        font-size: small;
     }
 
     .next-btn {
@@ -667,8 +685,12 @@ p.hint-text {
         font-size: small;
     }
 
-    footer {
-        font-size: small;
+    #start-game-pop{
+        margin: 0.5rem;
+    }
+        
+    .game-start {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -728,10 +750,6 @@ p.hint-text {
 @media screen and (min-width: 1020px) {
     .welcome-image {
         width: 60%;
-        padding: 1.5rem;
-    }
-
-    .btn-game {
-        margin-top: 1rem;
+        padding: 0 1.5rem;
     }
 }
