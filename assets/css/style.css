@@ -676,8 +676,10 @@ color: #11147a;
 
 /* == 404 Page == */
 .msg-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    align-content: center;
+    text-align: center;
 }
 
 .msg-container a {
