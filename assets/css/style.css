@@ -534,6 +534,15 @@ p.hint-text {
     color: #fff;
 }
 
+#score-feedback {
+    font-family: "Noto sans", sans-serif;
+    padding: 2em 0 2em;
+}
+
+#past-scores {
+    font-family: "Noto sans", sans-serif;ßß
+}
+
 /* Feedback message */
 .feedback {
     min-height: 2rem;
@@ -575,13 +584,29 @@ p.hint-text {
 
 /* Progress bar */
 .progress-bar {
-    text-align: center;
-    color: #a7a5a5;
-    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
-.current-q {
-    color: #d8a408;
+.progress-bar .progress {
+    text-align: center;
+    color: #f4b1b1;
+    padding: 0.6rem;
+    font-size: x-large;
+}
+
+.progress-bar .progress.current-q {
+    color: #c0c0c0;
+}
+
+.progress-bar .progress.correct {
+color: #d8a408;
+}
+
+.progress-bar .progress.incorrect {
+color: #11147a;
 }
 
 /* Team Page */
