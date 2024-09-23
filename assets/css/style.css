@@ -568,11 +568,11 @@ p.hint-text {
 .mute-btn {
     background-color: #C0C0C0;
     border-radius: 30%;
-    position: absolute;  /* or use fixed if you want the button to stay in place when scrolling */
-    right: 20px; /* Adjust this value to set how far from the right edge */
-    top: 20px;   /* Adjust this value for the vertical placement */
-    width: 30px; /* Set a fixed width for the button */
-    height: 30px; /* Set a fixed height for the button */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
