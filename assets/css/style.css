@@ -160,7 +160,7 @@ footer {
 
 /* Modal content box */
 .modal-content {
-    background-color: white;
+    background-color: antiquewhite;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -168,6 +168,24 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Play button in modal */
+#start-game {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d0a639; 
+    color: #121475;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Lugrasimo", serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#start-game:hover {
+    background-color: #dfe95d; /* Darker green on hover */
+}
 
 .close {
     position: absolute;

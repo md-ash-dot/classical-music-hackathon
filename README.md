@@ -24,6 +24,7 @@ The Empire Strikes Bach Musical Quiz App is an interactive, educational tool des
 -   [Agile Development Process](#agile-development-process)
 -   [Deployment](#Deployment)
 -   [Credits](#credits)
+-   [Acknowledgements](#Acknowledgements)
 
 ## UX
 
@@ -147,6 +148,13 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
     - The Footer of the page credits the development team, named "The Empire Strikes Bach (Team 7)," and mentions that the app was created during a Code Institute Hackathon in celebration of Classical Music Month. It serves as a closing note, acknowledging the creators and the event behind the app's development.
 
     ![Navbar Page](assets/images/readme/footer.png) 
+
+   - **Error Page**
+
+     - We have included error handling for error 404 page.
+
+   ![Error Page](assets/images/readme/404-page.png)  
+
 
 
 - **Images and Background**
@@ -321,4 +329,22 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 [Back to top](#Melomaniac)
 
 
-### Credits
+## Credits
+
+
+
+## Acknowledgements
+
+A special thank you to all the fellow team members of the Empire Strike Bach for their great work:
+
+- [Gemma](https://github.com/GemmaButcher-dev) <br>
+- [James](https://github.com/broken-helix)<br>
+- [Kiree](https://github.com/Swewi)<br>
+- [Muhammed](https://github.com/md-ash-dot/)<br>
+- [Maria](https://github.com/maria-grozova)<br>
+- [Iryna](https://github.com/irasan)
+- [Martins](https://github.com/Ebuka-martins)
+
+We also used our slack channel canvas to great efficiency for meetings, notes and tables so people were aware of their tasks.
+
+[Back to top](#Melomaniac)
