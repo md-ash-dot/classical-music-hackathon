@@ -122,6 +122,7 @@ main {
 
 .description {
     text-align: center;
+    margin-top: 5px;
     color: #d8a408;
 }
 
@@ -159,7 +160,7 @@ footer {
 
 /* Modal content box */
 .modal-content {
-    background-color: white;
+    background-color: antiquewhite;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -167,7 +168,25 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Close button (X) */
+/* Play button in modal */
+#start-game {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d0a639; 
+    color: #121475;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Lugrasimo", serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#start-game:hover {
+    background-color: #dfe95d; /* Darker green on hover */
+}
+
 .close {
     position: absolute;
     top: 10px;
@@ -196,6 +215,23 @@ footer {
     width: 80%;
     height: auto;
     max-width: 100%;
+}
+
+/* Dictionary meaning */
+.meaning {
+    text-align: left;
+    font-size: xx-small;
+    color: #c0c0c0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.welcome-container img {
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 .intro-container {
