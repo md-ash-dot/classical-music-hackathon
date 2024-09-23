@@ -1,38 +1,39 @@
 
-# [Melomaniac](https://md-ash-dot.github.io/classical-music-hackathon/)
+# Melomaniac
 
-![Project Title](assets/images/readme/intro.png)
-=======
+![Title page resposive](assets/images/readme/responsive.jpg)
 
+[Melomaniac - Live site](https://md-ash-dot.github.io/classical-music-hackathon/)
 
 ## Introduction
-The Empire Strikes Bach Musical Quiz App is an interactive, educational tool designed to engage users with a variety of questions that explore musical knowledge. With a focus on different categories like instrument identification, sound recognition, and pop culture references, this app has the potential to cater to a wide range of audiences—from students learning about music theory to casual users interested in testing their musical knowledge. The site can be accessed through the [link](https://md-ash-dot.github.io/classical-music-hackathon/)
 
+The Empire Strikes Bach Musical Quiz App is an interactive, educational tool designed to engage users with a variety of questions that explore musical knowledge. With a focus on different categories like instrument identification, sound recognition, and pop culture references, this app has the potential to cater to a wide range of audiences—from students learning about music theory to casual users interested in testing their musical knowledge. The site can be accessed through the [link](https://md-ash-dot.github.io/classical-music-hackathon/)
 
 ## Content
 
--   [Introduction](#introduction)
--   [UX](#ux)
-    -   [Colour Scheme](#colour-scheme)
-    -   [Typography](#typography)
--   [User Stories](#user-stories)
--   [Wireframes](#wireframes)
--   [Features](#features)
--   [Tools & Technologies Used](#tools--technologies-used)
--   [Collaborators](#Collaborators)
--   [Testing](#testing)
--   [Agile Development Process](#agile-development-process)
--   [Deployment](#Deployment)
--   [Credits](#credits)
--   [Acknowledgements](#Acknowledgements)
+- [Introduction](#introduction)
+- [UX](#ux)
+  - [Colour Scheme](#colour-scheme)
+  - [Typography](#typography)
+- [User Stories](#user-stories)
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Tools & Technologies Used](#tools--technologies-used)
+- [Collaborators](#collaborators)
+- [Testing](#testing)
+- [Agile Development Process](#agile-development-process)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 ## UX
 
 ### User Experience
 
-The Empire Strikes Bach musical quiz app is essential for creating an engaging, intuitive, and enjoyable interaction that keeps users returning for more. The UX design will focus on simplicity, engagement, accessibility, and a smooth flow from question to question. Below is a breakdown of the key UX elements for the app.
+The Melomaniac quiz app, built by Empire Strikes Bach, is designed to create an engaging, intuitive, and enjoyable interaction that keeps users returning for more. The UX design will focus on simplicity, engagement, accessibility, and a smooth flow from question to question. Below is a breakdown of the key UX elements for the app.
 
-**The Ideal User**
+#### **The Ideal User**
+
 - It ensure that first-time users understand the app's features and how to navigate through it without feeling overwhelmed.
 - It provide a clear navigation and quick access to different quiz categories for any users.
 - It Offers a clean, focused environment that makes answering questions fun and engaging.
@@ -40,17 +41,19 @@ The Empire Strikes Bach musical quiz app is essential for creating an engaging, 
 - Ensure a high-quality, smooth audio experience for sound-based questions for users.
 - Make the app usable for a broad audience, including those with different accessibility needs.
 - Maintain a fluid and logical flow through the app to minimize confusion and frustration.
--  Encourage users to continue engaging with the app after completing quizzes.
+- Encourage users to continue engaging with the app after completing quizzes.
 - Ensure a consistent experience across devices and platforms for users.
 - Allow users to provide feedback easily.
 
-**Site Goals**
+#### **Site Goals**
+
 - To provide a fun, interactive learning experience that enhances users’ musical knowledge.
 - To keep users engaged and motivated to return to the site regularly.
--  Ensure the site is easy to navigate, intuitive, and offers a positive user experience.
+- Ensure the site is easy to navigate, intuitive, and offers a positive user experience.
 - To attract a broad audience by providing a mix of educational and entertaining content.
 
 ### Colour Scheme
+
 We've used CSS for the colours and used colours from the original strike Bach App to make it feel authentic.
 
 we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) to generate our colour palette.
@@ -59,9 +62,9 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) t
 
 ## Typography
 
- - Lugrasimo google font was used as the main font of the website in order to increase readability of the content on the pages.
+- Lugrasimo, and Noto sans were used throughtout the page to ensure a classical look while retaining readability.
 
- ![Google Font](assets/images/google-font.png)
+ ![Google Font](assets/images/readme/google-font.png)
 
 ## User Stories
 
@@ -73,30 +76,22 @@ As a user I can use the site to teach myself about elements of classical music
 As a user I can get a final score so I know how I have performed in the quiz
 As a user I can repeat a quiz at the end, or select another quiz, so I can continue to test my knowledge
 
-
-### Landing Page 
+### Landing Page
 
 - As a user, I should be able to figure out what a site is about in 10 seconds.
 
 ### Wireframes
 
-
 To follow best practices, wireframes were developed to help with development.
 We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wireframes.
 
-**Sections:**
+#### **Sections:**
 
-| Mobile Page | Desktop Page | Musical Quiz Page |
-| --- | --- | --- |
-| ![Mobile Page Screenshot](assets/images/readme/melomaniac-home-mobile.png) | ![Game Page Screenshot](assets/images/readme/desktop.png) | ![Musical Quiz Page](assets/images/readme/quiz.png) |
-
-
-| Team Page | Quiz Page |
+| Mobile Page | Desktop Page |
 | --- | --- |
-| ![Contact Page Screenshot](assets/images/readme/team.png) | ![About Page Screenshot](assets/images/readme/quiz.png)
+| ![Mobile Page Screenshot](assets/images/readme/melomaniac-home-mobile.png) | ![Game Page Screenshot](assets/images/readme/desktop.png) |
 
-[Back to top](#Melomaniac)
-
+[Back to top](#melomaniac)
 
 ## Features
 
@@ -108,10 +103,9 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
   ![Main Page Screenshot](assets/images/readme/main-page.png)
 
-
 - **Pop Culture Page**
 
-  - The Pop Culture option in the musical quiz app tests your knowledge of music as it relates to popular culture. This quiz likely covers questions about famous soundtracks, iconic songs, popular artists, and musical trends from movies, TV shows, and other entertainment media. It's a fun way to challenge your understanding of how music has influenced and been featured in mainstream culture. 
+  - The Pop Culture option in the musical quiz app tests your knowledge of music as it relates to popular culture. This quiz likely covers questions about famous soundtracks, iconic songs, popular artists, and musical trends from movies, TV shows, and other entertainment media. It's a fun way to challenge your understanding of how music has influenced and been featured in mainstream culture.
 
    ![Pop culture Page](assets/images/readme/pop-culture.png)
 
@@ -122,49 +116,46 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
   ![Musical Instrument Page](assets/images/readme/instrument-page.png)
 
 - **Instrument Sound Page**  
-    
+
   - The Instrument Sounds option in the quiz app challenges users to identify different musical instruments based on the sounds they produce. It includes audio clips of various instruments, and users must recognize and match the sound to the correct instrument. This quiz sharpens your ear for music and helps improve your ability to distinguish between different instrument sounds.
 
    ![Instrument Sound Page](assets/images/readme/sound-page.png)
 
-- **Composers Page**    
+- **Composers Page**
 
   - The Composers option in the quiz app tests your knowledge of famous composers and their works. It includes questions about well-known classical and modern composers, their musical styles, and their most iconic pieces. This quiz is perfect for those interested in learning more about the creators behind some of the greatest music in history.
 
-  
-   ![Composer Sound Page](assets/images/readme/composers.png)
+   ![Composer Sound Page](assets/images/readme/composer.png)
 
-- **Team Page** 
+- **Team Page**
 
   - The Team page introduces the developers and creators behind the musical quiz app. It provides information about the team members, their roles, and contributions to the project. This page highlights the collaborative effort and expertise that went into building the app, giving users insight into the people who made the experience possible.
 
    ![Team Page](assets/images/readme/collaborators.png)
 
-- **Navbar** 
+- **Navbar**
 
-  -  The Navbar of the page provides easy navigation for users. It includes a logo for the musical quiz app and links to the Home and Team pages. The Home link is marked as the current page, while the Team link allows users to learn more about the creators of the app. The Navbar ensures quick access to key sections of the site, making it user-friendly and straightforward.   
+  - The Navbar of the page provides easy navigation for users. It includes a logo for the musical quiz app and links to the Home and Team pages. The Home link is marked as the current page, while the Team link allows users to learn more about the creators of the app. The Navbar ensures quick access to key sections of the site, making it user-friendly and straightforward.
 
    ![Navbar Page](assets/images/readme/navbar.png)
 
- - **Logo**
+- **Logo**
 
-   - The logo represent the symbol and favicon used on the website.
+  - The logo represent the symbol and favicon used on the website.
 
    ![Navbar Page](assets/images/musiclogo.webp)
- 
-  - **Footer**
 
-    - The Footer of the page credits the development team, named "The Empire Strikes Bach (Team 7)," and mentions that the app was created during a Code Institute Hackathon in celebration of Classical Music Month. It serves as a closing note, acknowledging the creators and the event behind the app's development.
+- **Footer**
 
-    ![Navbar Page](assets/images/readme/footer.png) 
+  - The Footer of the page credits the development team, named "The Empire Strikes Bach (Team 7)," and mentions that the app was created during a Code Institute Hackathon in celebration of Classical Music Month. It serves as a closing note, acknowledging the creators and the event behind the app's development.
 
-   - **Error Page**
+    ![Navbar Page](assets/images/readme/footer.png)
 
-     - We have included error handling for error 404 page.
+- **Error Page**
+
+  - We have included error handling for error 404 page.
 
    ![Error Page](assets/images/readme/404-page.png)  
-
-
 
 - **Images and Background**
 
@@ -172,15 +163,11 @@ We have included the following images and background in the project:
 
 | Image | Screenshot |
 | --- | --- |
-| About Title | ![About Page Title Screenshot](assets/images/melomaniac-gold.webp) |
-| Title | ![Project Title Screenshot](assets/images/readme/intro.png) |
-| Ripped Sheet | ![Ripped Sheet Screenshot](assets/images/ripped-sheet.png) |
-| Tones | ![Tone Image Screenshot](assets/images/tone.png) |
-| Homepage Logo | ![Homepage Logo Screenshot](assets/images/musiclogo.webp) |
-| Page Background | ![Background Page Screenshot](assets/images/faded-background.webp)
-| Music | ![Music Image Screenshot](assets/images/music.png) |
+| Hero Image | ![About Page Title Screenshot](assets/images/melomaniacs.webp) |
+| Icon example | ![Tone Image Screenshot](assets/images/tone.png) |
+| Page Background | ![Background Page Screenshot](assets/images/faded-background.webp) |
 
-[Back to top](#Melomaniac)
+[Back to top](#melomaniac)
 
 ## Tools & Technologies Used
 
@@ -198,8 +185,7 @@ We have included the following images and background in the project:
 - [![wikipedia](https://img.shields.io/badge/wikipedia-grey?logo=wikipedia&logoColor=ffffff)](https://www.wikipedia.org/) used for asking questions.
 - [![Audio-Trimmer](https://img.shields.io/badge/audiotrimmer-grey?logo=audiotrimmer&logoColor=2d7d2d)](https://audiotrimmer.com/) used to trim audio size.
 
-
-[Back to top](#Melomaniac)
+[Back to top](#melomaniac)
 
 ## Collaborators
 
@@ -217,14 +203,22 @@ Thank you for your invaluable contributions and commitment to excellence.
 | Maria | Jack of all trades | [Github](https://github.com/maria-grozova) |
 | Kiree |  Jack of all trades | [Github](https://github.com/Swewi) |
 
-[Back to top](#Melomaniac)
+[Back to top](#melomaniac)
 
+## Testing
 
-### Testing
+We have run the css and html through W3 code validators:
+
+- We have fixed any minor issues, and we had one issue with a change in way that iframes display, after fixing these everything passed.
+
+We have also ran our site through lighthouse to check the accessability of the site overall:
+
+| ![Desktop output](assets/images/readme/lighthouse-desktop-hack.png) | ![Mobile output](assets/images/readme/lighthoue-mobile-hack.png) |
+| --- | --- |
 
 ## Agile Development Process
 
-**Agile Methodology**
+### **Agile Methodology**
 
 Our project uses Agile methodology, a framework that enables us to create an interactive, multimedia-based musical quiz app that engages users through learning and entertainment, covering instrument identification, sound recognition, and pop culture music trivia.
 
@@ -237,8 +231,8 @@ Our project uses Agile methodology, a framework that enables us to create an int
 
 - Core Agile Team
 
-  - **Development Team:** A cross-functional team that includes front-end and back-end developers, UI/UX designers, QA testers, and DevOps engineers. 
-  - **Scrum Master:** Facilitates the Agile process, ensuring the team follows Agile principles and removes any roadblocks that hinder progress. 
+  - **Development Team:** A cross-functional team that includes front-end and back-end developers, UI/UX designers, QA testers, and DevOps engineers.
+  - **Scrum Master:** Facilitates the Agile process, ensuring the team follows Agile principles and removes any roadblocks that hinder progress.
   - **Team Members (TM):** Responsible for defining the vision and managing the product backlog. The TM ensures that the app aligns with the overall business goals.
 
 At the start of each sprint, our team engages in sprint planning to set the direction for our upcoming work, involving prioritization of the product backlog to address the most critical tasks first, defining clear sprint goals aligned with project milestones, and assigning tasks based on expertise and workload. Throughout development, we navigate trade-offs between scope, quality, time, and resources to maintain a balance between delivering high-quality work efficiently and managing priorities. Adopting Agile methodologies allows us to remain adaptable and focused, ensuring we meet user needs while striving for excellence.
@@ -247,10 +241,9 @@ At the start of each sprint, our team engages in sprint planning to set the dire
 
   This Agile methodology provides a clear, flexible, and iterative approach to building our musical quiz app. By delivering features incrementally, regularly reviewing feedback, and making adjustments as needed, it ensure that the app meets user expectations, stays aligned with business goals, and continuously improves over time.
 
-
 Through this process, user stories, issues, and tasks were planned, then tracked on a daily basis using [MIRO APP](https://miro.com/app/board/uXjVLdWR2kA=/)
 
-**GitHub Issues**
+## **GitHub Issues**
 
 [GitHub Issues](https://github.com/md-ash-dot/classical-music-hackathon) served as an Agile tool.
 
@@ -258,15 +251,13 @@ It also helped with iterations on a daily basis.
 
 screen shots of open and closed issues here
 
-**Collaboration Tools** 
+### **Collaboration Tools**
 
 The team used Slack where we had two or three meetings per day and to message in for quick collaboration purposes and Github projects to track ideas, User Stories, Bugs and Time plan.
 
 The Team used Slack team channel Canvas to ensure everyone stayed updated on project progress and discussions.
 
-
-[Back to top](#Melomaniac)
-   
+[Back to top](#melomaniac)
 
 ## Deployment
 
@@ -286,14 +277,13 @@ This project was deployed on GitHub pages using the following steps:
 
 ### Local Deployment
 
-**GitHub**
+#### **GitHub**
 
 First a new repository was created in github then this project can be cloned or forked in order to make a local copy on your own system.
 
 Once the project is cloned or forked, in order to run it locally you will need to use the command 'npm run start' to start the app.
 
-
-**Version Control**
+#### **Version Control**
 
 For version control the following steps were made:
 
@@ -307,7 +297,7 @@ For version control the following steps were made:
 
 - Create a pull request in GitHub which another member can then approve.
 
-**Cloning**
+#### **Cloning**
 
 You can clone the repository by following these steps:
 
@@ -325,7 +315,7 @@ You can clone the repository by following these steps:
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-**Forking**
+#### **Forking**
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
 
@@ -335,19 +325,18 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 
 - Click the create button, once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-[Back to top](#Melomaniac)
-
+[Back to top](#melomaniac)
 
 ## Credits
 
-### Content
+### Content - Credit
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Wikipedia](https://www.wikipedia.org/) | Wikipedia | Used for learning and inspiration. |
 | [Microsoft bing](https://www.bing.com/chat) | Co-pilot | Used for research and inspiration. |
 | [chatgpt](https://chatgpt.com/) | Research | Used for quiz question. |
-| [ Google Fonts](https://fonts.google.com/) | Google Font | Used for font style. |
+| [Google Fonts](https://fonts.google.com/) | Google Font | Used for font style. |
 | [Font Awesome](https://fontawesome.com/) | Symbol | Used for symbol installation. |
 
 ### Media
@@ -358,19 +347,18 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 | [Youtube](https://www.youtube.com/) | Sound | Created by Youtube |
 | canva | Images | canva |
 
-
 ## Acknowledgements
 
 A special thank you to all the fellow team members of the Empire Strike Bach for their great work:
 
-- [Gemma](https://github.com/GemmaButcher-dev) <br>
-- [James](https://github.com/broken-helix)<br>
-- [Kiree](https://github.com/Swewi)<br>
-- [Muhammed](https://github.com/md-ash-dot/)<br>
-- [Maria](https://github.com/maria-grozova)<br>
+- [Gemma](https://github.com/GemmaButcher-dev)
+- [James](https://github.com/broken-helix)
+- [Kiree](https://github.com/Swewi)
+- [Muhammed](https://github.com/md-ash-dot/)
+- [Maria](https://github.com/maria-grozova)
 - [Iryna](https://github.com/irasan)
 - [Martins](https://github.com/Ebuka-martins)
 
 We also used our slack channel canvas to great efficiency for meetings, notes and tables so people were aware of their tasks.
 
-[Back to top](#Melomaniac)
+[Back to top](#melomaniac)
