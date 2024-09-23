@@ -274,7 +274,7 @@ footer {
 }
 
 #start-game-pop {
-    margin: 0.5em;
+    margin: 1.2rem;
 }
 
 .game-start {
@@ -288,7 +288,7 @@ footer {
     padding: 0.6rem;
     width: 16rem;
     height: 3rem;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.2rem;
     font-family: "Lugrasimo", serif;
     font-size: large;
     font-weight: 600;
@@ -662,6 +662,7 @@ p.hint-text {
     footer {
         position: relative;
         margin: 0;
+        font-size: small;
     }
 
     .next-btn {
@@ -672,8 +673,12 @@ p.hint-text {
         font-size: small;
     }
 
-    footer {
-        font-size: small;
+    #start-game-pop{
+        margin: 0.5rem;
+    }
+        
+    .game-start {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -733,6 +738,6 @@ p.hint-text {
 @media screen and (min-width: 1020px) {
     .welcome-image {
         width: 60%;
-        padding: 1.5rem;
+        padding: 0 1.5rem;
     }
 }
