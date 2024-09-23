@@ -273,6 +273,10 @@ footer {
     margin-top: 1rem;
 }
 
+#start-game-pop {
+    margin: 0.5em;
+}
+
 .game-start {
     display: flex;
     align-items: center;
@@ -284,7 +288,7 @@ footer {
     padding: 0.6rem;
     width: 16rem;
     height: 3rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.5em;
     font-family: "Lugrasimo", serif;
     font-size: large;
     font-weight: 600;
