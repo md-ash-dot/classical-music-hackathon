@@ -7,7 +7,7 @@
 
 ## Introduction
 
-The Empire Strikes Bach Musical Quiz App is an interactive, educational tool designed to engage users with a variety of questions that explore musical knowledge. With a focus on different categories like instrument identification, sound recognition, and pop culture references, this app has the potential to cater to a wide range of audiences—from students learning about music theory to casual users interested in testing their musical knowledge. The site can be accessed through the [link](https://md-ash-dot.github.io/classical-music-hackathon/)
+The Melomaniac quiz app, built by Empire Strikes Bach, is an interactive, educational tool designed to engage users with a variety of questions that explore musical knowledge. With a focus on different categories like instrument identification, sound recognition, and pop culture references, this app has the potential to cater to a wide range of audiences—from students learning about music theory to casual users interested in testing their musical knowledge. The site can be accessed through the [link](https://md-ash-dot.github.io/classical-music-hackathon/)
 
 ## Content
 
