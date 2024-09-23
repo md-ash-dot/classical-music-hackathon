@@ -1,9 +1,10 @@
 let currentQuestionIndex = 0;
 let score = 0;
-let highestScore = localStorage.getItem('highScore') ? Number(localStorage.getItem('highScore')) : 0;
+let highestScore = localStorage.getItem('SoundHighestScore') ? Number(localStorage.getItem('SoundHighestScore')) : 0;
 let selectedQuestions = [];
-let answerChecked = false; // To track if feedback is shown
+let answerChecked = false;
 let isMuted = false;
+let isUpdating = false;
 
 // Selectors for HTML elements
 const audioPlayer = document.getElementById('audio-player');
@@ -34,53 +35,63 @@ function shuffleArray(array) {
 
 // Select 10 random questions and shuffle the options within the questions
 function selectRandomQuestions() {
-    shuffleArray(soundQuestions); // Shuffle the entire soundQuestions array
-    selectedQuestions = soundQuestions.slice(0, 10); // Limit to first 10 questions
+    shuffleArray(soundQuestions);
+    selectedQuestions = soundQuestions.slice(0, 10);
 }
 
 // Load a question
 function loadQuestion() {
-    feedbackEl.innerText = ''; // Hide feedback
-    answerChecked = false; // Reset feedback check
+    feedbackEl.innerText = '';
+    answerChecked = false;
 
-    // Load current question
     const currentQuestion = selectedQuestions[currentQuestionIndex];
-    // Display the question
     questionEl.innerText = `${currentQuestionIndex + 1}. ${currentQuestion.question}`;
     
-    // Hide and reset the audio player
     audioPlayer.src = currentQuestion.audio;
     
-    // Display the options
-    optionsEl.innerHTML = ''; // Clear previous options
+    optionsEl.innerHTML = '';
     currentQuestion.options.forEach((option, index) => {
-        const optionId = `option${index}`; // Unique ID for each option
+        const optionId = `option${index}`;
 
-        // Create radio input element
         const input = document.createElement('input');
         input.type = 'radio';
         input.id = optionId;
         input.name = 'quiz-option';
         input.value = option;
-        input.onclick = enableNext; // Enable "Next" button when an option is clicked
+        input.onclick = enableNext;
 
-        // Create label element
         const label = document.createElement('label');
         label.setAttribute('for', optionId);
         label.classList.add('option-button');
         label.innerText = option;
 
-        // Append input and label to the options container
         optionsEl.appendChild(input);
         optionsEl.appendChild(label);
     });
 
-    // Disable the "Next" button until an option is selected
     nextBtn.disabled = true;
 
-    // Display the progress bar
-    let progressBar = document.getElementsByClassName("progress");
-    progressBar[currentQuestionIndex].classList.add("current-q");
+    // Update progress bar
+    updateProgressBar();
+}
+
+// Add a new function to update the progress bar
+function updateProgressBar() {
+    const progressBar = document.querySelector('.progress-bar');
+    const progressItems = progressBar.querySelectorAll('.progress');
+    
+    progressItems.forEach((item, index) => {
+        if (index < currentQuestionIndex) {
+            item.classList.add('answered');
+            item.classList.remove('current-q', 'unanswered');
+        } else if (index === currentQuestionIndex) {
+            item.classList.add('current-q');
+            item.classList.remove('answered', 'unanswered');
+        } else {
+            item.classList.add('unanswered');
+            item.classList.remove('answered', 'current-q');
+        }
+    });
 }
 
 // Function to enable the "Next" button once an option is selected
@@ -95,51 +106,70 @@ function playAudio() {
 
 // Function to check the answer and show feedback
 function checkAnswer() {
-    if (answerChecked) return; // Prevent checking the answer again
-    answerChecked = true; // Mark the answer as checked
+    if (answerChecked) return;
+    answerChecked = true;
     
     const selectedOption = document.querySelector('input[name="quiz-option"]:checked').value;
     const currentQuestion = selectedQuestions[currentQuestionIndex];
 
-    // Create feedback and play corresponding audio
-    if (selectedOption === currentQuestion.answer) {
+    const isCorrect = selectedOption === currentQuestion.answer;
+    if (isCorrect) {
         score++;
         feedbackEl.innerHTML = `<p style="color: green;">Correct! Well done.</p>`;
         if (!isMuted) {
-            correctSound.play(); // Play correct answer sound
+            correctSound.play();
         }
     } else {
         feedbackEl.innerHTML = `<p style="color: red;">Wrong! The correct answer was: ${currentQuestion.answer}</p>`;
         if (!isMuted) {
-            incorrectSound.play(); // Play incorrect answer sound
+            incorrectSound.play();
         }
     }
-
-    // Display the feedback
     optionsEl.appendChild(feedbackEl);
+
+    // Update progress bar color based on the answer
+    const progressItem = document.querySelector(`.progress:nth-child(${currentQuestionIndex + 1})`);
+    progressItem.classList.add(isCorrect ? 'correct' : 'incorrect');
+
+    // Disable the next button to prevent spam clicks
+    nextBtn.disabled = true;
 }
 
 // Function to load the next question or end the quiz
 function nextQuestion() {
-    checkAnswer(); // Show feedback for the user's answer
+    if (isUpdating) return;
+    isUpdating = true;
 
-    if (answerChecked) {
-        const optionButtons = document.querySelectorAll('input[name="quiz-option"]');
-        optionButtons.forEach(button => {
-            button.disabled = true; // Disable each radio button
-        });
-        currentQuestionIndex++; // Move to the next question after feedback is shown
+    if (!answerChecked) {
+        checkAnswer();
+    }
 
-        if (currentQuestionIndex < selectedQuestions.length) {
-            setTimeout(() => { // Wait 2 seconds to show feedback before loading the next question
-                loadQuestion(); // Load the next question
-            }, 2000);
-        } else {
-            // If the last question was just answered, show feedback and then end the quiz
-            setTimeout(() => {
-                endQuiz(); // End the quiz after feedback is shown
-            }, 2000);
-        }
+    const optionButtons = document.querySelectorAll('input[name="quiz-option"]');
+    optionButtons.forEach(button => {
+        button.disabled = true;
+    });
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < selectedQuestions.length) {
+        setTimeout(() => {
+            answerChecked = false;
+            loadQuestion();
+            isUpdating = false;
+            nextBtn.disabled = true;
+        }, 2000);
+    } else {
+        setTimeout(() => {
+            endQuiz();
+            isUpdating = false;
+        }, 2000);
+    }
+}
+
+// Store the highest score in localStorage if the current score is greater
+function storeHighestScore() {
+    if (score > highestScore) {
+        localStorage.setItem('SoundHighestScore', score);
     }
 }
 
@@ -148,7 +178,7 @@ function displayScoreFeedback(score) {
     let message;
     
     if (score === 0) {
-        message = "Oops! That one’s a blooper. Better luck next time!";
+        message = "Oops! That one's a blooper. Better luck next time!";
     } else if (score <= 4) {
         message = "Missed the beat, but the show goes on!";
     } else if (score <= 7) {
@@ -159,29 +189,17 @@ function displayScoreFeedback(score) {
         message = "WOW! You're a melomaniac!";
     }
     
-    scoreFeedbackEl.innerText = message; // Display the message in the HTML
-}
-
-// Store the highest score in localStorage if the current score is greater
-function storeHighestScore() {
-    const highestScore = localStorage.getItem('SoundHighestScore') || 0;
-
-    if (score > highestScore) {
-        localStorage.setItem('SoundHighestScore', score);
-    }
+    scoreFeedbackEl.innerText = message;
 }
 
 // End of quiz: Display final score and high score
 function endQuiz() {
     storeHighestScore(); 
-    // Hide quiz interface
-    quizContainerEl.style.display = 'none'; // Hide the quiz container
+    quizContainerEl.style.display = 'none';
 
-    // Update and display high score
     highestScore = localStorage.getItem('SoundHighestScore');
     highestScore = highestScore ? highestScore : 0;
 
-    // Display final score and the highest score
     scoreEl.innerText = `Your final score: ${score} out of ${selectedQuestions.length}`;
     highScoreEl.innerText = `Highest score: ${highestScore}`;
     resultEl.style.display = 'block';
@@ -200,20 +218,24 @@ function toggleMute() {
 // Check localStorage for existing mute state
 function checkMuteState() {
     if (storedMuteState !== null) {
-        isMuted = JSON.parse(storedMuteState); // Convert string to boolean
+        isMuted = JSON.parse(storedMuteState);
     }
-    toggleMute(); // Update the sound and button based on the mute state
+    toggleMute();
 }
 
-muteBtn.addEventListener('click', () => {
-    isMuted = !isMuted;
-    localStorage.setItem('isMuted', isMuted); // Store mute state in localStorage
-    toggleMute();
+nextBtn.addEventListener('click', () => {
+    if (!isUpdating) {
+        nextQuestion();
+    }
 });
 
 // Start the quiz
-window.onload = function() {
-    selectRandomQuestions(); // Select random questions on page load
-    loadQuestion();
-    checkMuteState();
-}
+selectRandomQuestions();
+loadQuestion();
+checkMuteState();
+
+muteBtn.addEventListener('click', () => {
+    isMuted = !isMuted;
+    localStorage.setItem('isMuted', isMuted);
+    toggleMute();
+});
