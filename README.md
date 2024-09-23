@@ -148,6 +148,13 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
     ![Navbar Page](assets/images/readme/footer.png) 
 
+   - **Error Page**
+
+     - We have included error handling for error 404 page.
+
+   ![Error Page](assets/images/readme/404-page.png)  
+
+
 
 - **Images and Background**
 
