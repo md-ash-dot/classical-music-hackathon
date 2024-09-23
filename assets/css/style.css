@@ -41,7 +41,7 @@ header {
     padding: 0.5rem;
     margin-left: 0.7rem;
     font-family: "Noto Sans", sans-serif;
-    color: #c0c0c0;
+    color: #d8a408;
     font-size: x-large;
 }
 
@@ -54,7 +54,7 @@ header {
 }
 
 .nav-item a.active {
-    color: #d8a408;
+    color: #c0c0c0;
 }
 
 .logo {
@@ -319,14 +319,14 @@ footer {
 
 .game-start:hover {
     transform: scale(1.05);
-    background-color: #dde83a;
+    background-color: #f9ad17;
     box-shadow: 0 0 15px #c0c0c090;
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
 
 .game-start:focus {
     outline: 2px solid rgb(28, 72, 110);
-    background-color: #dde83a;
+    background-color: #f9ad17;
     box-shadow: 0 0 15px #c0c0c090;
     text-shadow: 0 0 3px rgba(22, 34, 44, 0.2);
 }
