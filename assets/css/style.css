@@ -270,6 +270,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 .game-start {
@@ -729,9 +730,5 @@ p.hint-text {
     .welcome-image {
         width: 60%;
         padding: 1.5rem;
-    }
-
-    .btn-game {
-        margin-top: 1rem;
     }
 }
