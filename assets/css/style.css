@@ -534,6 +534,15 @@ p.hint-text {
     color: #fff;
 }
 
+#score-feedback {
+    font-family: "Noto sans", sans-serif;
+    padding: 2em 0 2em;
+}
+
+#past-scores {
+    font-family: "Noto sans", sans-serif;ßß
+}
+
 /* Feedback message */
 .feedback {
     min-height: 2rem;
