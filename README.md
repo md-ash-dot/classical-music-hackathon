@@ -65,6 +65,15 @@ we've used [coolors.co](https://coolors.co/13223f-d8a408-1e2c47-eee5e9-c0c0c0) t
 
 ## User Stories
 
+- As a user I can arrive at the site and know what it is about
+As a user I can answer questions from a selection of quizzes
+As a user I can repeat any quiz and get a differing selection of questions
+As a user I can use the site to test my knowledge of classical music
+As a user I can use the site to teach myself about elements of classical music
+As a user I can get a final score so I know how I have performed in the quiz
+As a user I can repeat a quiz at the end, or select another quiz, so I can continue to test my knowledge
+
+
 ### Landing Page 
 
 - As a user, I should be able to figure out what a site is about in 10 seconds.
@@ -331,6 +340,23 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 
 ## Credits
 
+### Content
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Wikipedia](https://www.wikipedia.org/) | Wikipedia | Used for learning and inspiration. |
+| [Microsoft bing](https://www.bing.com/chat) | Co-pilot | Used for research and inspiration. |
+| [chatgpt](https://chatgpt.com/) | Research | Used for quiz question. |
+| [ Google Fonts](https://fonts.google.com/) | Google Font | Used for font style. |
+| [Font Awesome](https://fontawesome.com/) | Symbol | Used for symbol installation. |
+
+### Media
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Favicon](https://favicon.io/) | Favicon | Created by ineedicons |
+| [Youtube](https://www.youtube.com/) | Sound | Created by Youtube |
+| canva | Images | canva |
 
 
 ## Acknowledgements
