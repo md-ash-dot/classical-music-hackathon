@@ -719,6 +719,11 @@ color: #11147a;
     .game-start {
         margin-bottom: 0.5rem;
     }
+
+    .progress-bar .progress {
+        font-size: medium;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
